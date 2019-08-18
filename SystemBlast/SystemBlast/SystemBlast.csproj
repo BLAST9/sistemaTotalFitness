@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0FFC1415-7CDC-4C62-A596-ED95684638DB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SystemBlast</RootNamespace>
+    <AssemblyName>SystemBlast</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Proyecto_Edward\SystemBlast\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Proyecto_Edward\SystemBlast\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\..\..\Proyecto_Edward\SystemBlast\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlClient">
+      <HintPath>..\..\..\Proyecto_Edward\SystemBlast\System.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="formClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formClientes.Designer.cs">
+      <DependentUpon>formClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formEmpleado.Designer.cs">
+      <DependentUpon>formEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formExtras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formExtras.Designer.cs">
+      <DependentUpon>formExtras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formFactura.Designer.cs">
+      <DependentUpon>formFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formHorarioCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formHorarioCliente.Designer.cs">
+      <DependentUpon>formHorarioCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formHorarioEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formHorarioEmpleado.Designer.cs">
+      <DependentUpon>formHorarioEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formMensualidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formMensualidad.Designer.cs">
+      <DependentUpon>formMensualidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formMensualidadEjercicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formMensualidadEjercicio.Designer.cs">
+      <DependentUpon>formMensualidadEjercicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formMenu.Designer.cs">
+      <DependentUpon>formMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formPrincipal.Designer.cs">
+      <DependentUpon>formPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formProductos.Designer.cs">
+      <DependentUpon>formProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formTipoEjercicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formTipoEjercicio.Designer.cs">
+      <DependentUpon>formTipoEjercicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="formClientes.resx">
+      <DependentUpon>formClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formFactura.resx">
+      <DependentUpon>formFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formHorarioEmpleado.resx">
+      <DependentUpon>formHorarioEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formMenu.resx">
+      <DependentUpon>formMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formPrincipal.resx">
+      <DependentUpon>formPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formProductos.resx">
+      <DependentUpon>formProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\el-espiritu-santo-y-los-siete-pecados-capitales-papel-pintado-2560x1600-1817_7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CNegocio\CNegocio.csproj">
+      <Project>{2024ca1b-9432-4925-8e44-e433eb227fa5}</Project>
+      <Name>CNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataModel\DataModel.csproj">
+      <Project>{0d936b5f-b50b-4ab2-80a3-0e889c879f95}</Project>
+      <Name>DataModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

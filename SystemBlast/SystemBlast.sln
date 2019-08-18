@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.438
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SystemBlast", "SystemBlast\SystemBlast.csproj", "{0FFC1415-7CDC-4C62-A596-ED95684638DB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FrontEnd", "FrontEnd", "{48BA3F52-2720-4F7D-B7DC-A60FA08243F9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataModels", "DataModels", "{1BED714C-F456-4ACD-851A-F6B11665DC09}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BussRules", "BussRules", "{62B4A0EE-84D4-420F-94D0-2728B0C54BC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CNegocio", "CNegocio\CNegocio.csproj", "{2024CA1B-9432-4925-8E44-E433EB227FA5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BDGeneratorConsole", "BDGeneratorConsole", "{DDF277B0-754D-42C7-AE3D-8E3B220FF3A2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "POCO", "POCO", "{AC2CCA95-3773-418F-8AE3-88A420F5BF75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataModel", "DataModel\DataModel.csproj", "{0D936B5F-B50B-4AB2-80A3-0E889C879F95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BDGenerator", "BDGenerator\BDGenerator.csproj", "{6EA67C08-0BD2-475E-A179-D375375B1C65}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0FFC1415-7CDC-4C62-A596-ED95684638DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FFC1415-7CDC-4C62-A596-ED95684638DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FFC1415-7CDC-4C62-A596-ED95684638DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FFC1415-7CDC-4C62-A596-ED95684638DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2024CA1B-9432-4925-8E44-E433EB227FA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2024CA1B-9432-4925-8E44-E433EB227FA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2024CA1B-9432-4925-8E44-E433EB227FA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2024CA1B-9432-4925-8E44-E433EB227FA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D936B5F-B50B-4AB2-80A3-0E889C879F95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D936B5F-B50B-4AB2-80A3-0E889C879F95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D936B5F-B50B-4AB2-80A3-0E889C879F95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D936B5F-B50B-4AB2-80A3-0E889C879F95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EA67C08-0BD2-475E-A179-D375375B1C65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EA67C08-0BD2-475E-A179-D375375B1C65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EA67C08-0BD2-475E-A179-D375375B1C65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EA67C08-0BD2-475E-A179-D375375B1C65}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0FFC1415-7CDC-4C62-A596-ED95684638DB} = {48BA3F52-2720-4F7D-B7DC-A60FA08243F9}
+		{2024CA1B-9432-4925-8E44-E433EB227FA5} = {62B4A0EE-84D4-420F-94D0-2728B0C54BC7}
+		{DDF277B0-754D-42C7-AE3D-8E3B220FF3A2} = {1BED714C-F456-4ACD-851A-F6B11665DC09}
+		{AC2CCA95-3773-418F-8AE3-88A420F5BF75} = {1BED714C-F456-4ACD-851A-F6B11665DC09}
+		{0D936B5F-B50B-4AB2-80A3-0E889C879F95} = {AC2CCA95-3773-418F-8AE3-88A420F5BF75}
+		{6EA67C08-0BD2-475E-A179-D375375B1C65} = {DDF277B0-754D-42C7-AE3D-8E3B220FF3A2}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {20994087-3150-458A-B86A-D8DEF97C3510}
+	EndGlobalSection
+EndGlobal
