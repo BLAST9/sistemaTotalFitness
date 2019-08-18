@@ -10,3 +10,15 @@ C:\Users\User\Documents\GitHub\proyecto_GYM\SystemBlast\CNegocio\obj\Debug\CNego
 C:\Users\User\Documents\GitHub\proyecto_GYM\SystemBlast\CNegocio\obj\Debug\CNegocio.csproj.CopyComplete
 C:\Users\User\Documents\GitHub\proyecto_GYM\SystemBlast\CNegocio\obj\Debug\CNegocio.dll
 C:\Users\User\Documents\GitHub\proyecto_GYM\SystemBlast\CNegocio\obj\Debug\CNegocio.pdb
+C:\Users\User\Documents\GitHub\sistemaTotalFitness\SystemBlast\CNegocio\bin\Debug\CNegocio.dll
+C:\Users\User\Documents\GitHub\sistemaTotalFitness\SystemBlast\CNegocio\bin\Debug\CNegocio.pdb
+C:\Users\User\Documents\GitHub\sistemaTotalFitness\SystemBlast\CNegocio\bin\Debug\DataModel.dll
+C:\Users\User\Documents\GitHub\sistemaTotalFitness\SystemBlast\CNegocio\bin\Debug\EntityFramework.dll
+C:\Users\User\Documents\GitHub\sistemaTotalFitness\SystemBlast\CNegocio\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Documents\GitHub\sistemaTotalFitness\SystemBlast\CNegocio\bin\Debug\System.Data.SqlClient.dll
+C:\Users\User\Documents\GitHub\sistemaTotalFitness\SystemBlast\CNegocio\bin\Debug\DataModel.pdb
+C:\Users\User\Documents\GitHub\sistemaTotalFitness\SystemBlast\CNegocio\obj\Debug\CNegocio.csprojAssemblyReference.cache
+C:\Users\User\Documents\GitHub\sistemaTotalFitness\SystemBlast\CNegocio\obj\Debug\CNegocio.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\sistemaTotalFitness\SystemBlast\CNegocio\obj\Debug\CNegocio.csproj.CopyComplete
+C:\Users\User\Documents\GitHub\sistemaTotalFitness\SystemBlast\CNegocio\obj\Debug\CNegocio.dll
+C:\Users\User\Documents\GitHub\sistemaTotalFitness\SystemBlast\CNegocio\obj\Debug\CNegocio.pdb
