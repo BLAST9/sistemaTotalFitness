@@ -109,9 +109,9 @@
             // 
             this.btnActualizar.ActiveBorderThickness = 1;
             this.btnActualizar.ActiveCornerRadius = 20;
-            this.btnActualizar.ActiveFillColor = System.Drawing.Color.LawnGreen;
+            this.btnActualizar.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnActualizar.ActiveForecolor = System.Drawing.Color.Black;
-            this.btnActualizar.ActiveLineColor = System.Drawing.Color.LawnGreen;
+            this.btnActualizar.ActiveLineColor = System.Drawing.Color.Black;
             this.btnActualizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
             this.btnActualizar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnActualizar.BackgroundImage")));
             this.btnActualizar.ButtonText = "Actualizar";
@@ -162,9 +162,9 @@
             // 
             this.btnLimpiar.ActiveBorderThickness = 1;
             this.btnLimpiar.ActiveCornerRadius = 20;
-            this.btnLimpiar.ActiveFillColor = System.Drawing.Color.LawnGreen;
+            this.btnLimpiar.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnLimpiar.ActiveForecolor = System.Drawing.Color.Black;
-            this.btnLimpiar.ActiveLineColor = System.Drawing.Color.SeaShell;
+            this.btnLimpiar.ActiveLineColor = System.Drawing.Color.Black;
             this.btnLimpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
             this.btnLimpiar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLimpiar.BackgroundImage")));
             this.btnLimpiar.ButtonText = "Limpiar Datos";
@@ -188,9 +188,9 @@
             // 
             this.btnEliminar.ActiveBorderThickness = 1;
             this.btnEliminar.ActiveCornerRadius = 20;
-            this.btnEliminar.ActiveFillColor = System.Drawing.Color.LawnGreen;
+            this.btnEliminar.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnEliminar.ActiveForecolor = System.Drawing.Color.Black;
-            this.btnEliminar.ActiveLineColor = System.Drawing.Color.LawnGreen;
+            this.btnEliminar.ActiveLineColor = System.Drawing.Color.Black;
             this.btnEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
             this.btnEliminar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEliminar.BackgroundImage")));
             this.btnEliminar.ButtonText = "Eliminar";
@@ -247,7 +247,7 @@
             this.dtgLlenardatos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Yellow;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -272,7 +272,6 @@
             this.dtgLlenardatos.RowHeadersVisible = false;
             this.dtgLlenardatos.RowHeadersWidth = 100;
             this.dtgLlenardatos.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dtgLlenardatos.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.dtgLlenardatos.Size = new System.Drawing.Size(673, 226);
             this.dtgLlenardatos.TabIndex = 137;
             this.dtgLlenardatos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgLlenardatos_CellContentClick);
@@ -385,7 +384,7 @@
             this.txtTelefono.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTelefono.Font = new System.Drawing.Font("Californian FB", 12F);
             this.txtTelefono.ForeColor = System.Drawing.Color.White;
-            this.txtTelefono.HintForeColor = System.Drawing.Color.Empty;
+            this.txtTelefono.HintForeColor = System.Drawing.Color.White;
             this.txtTelefono.HintText = "";
             this.txtTelefono.isPassword = false;
             this.txtTelefono.LineFocusedColor = System.Drawing.Color.Yellow;
@@ -418,7 +417,7 @@
             this.txtEdad.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtEdad.Font = new System.Drawing.Font("Californian FB", 12F);
             this.txtEdad.ForeColor = System.Drawing.Color.White;
-            this.txtEdad.HintForeColor = System.Drawing.Color.Empty;
+            this.txtEdad.HintForeColor = System.Drawing.Color.White;
             this.txtEdad.HintText = "";
             this.txtEdad.isPassword = false;
             this.txtEdad.LineFocusedColor = System.Drawing.Color.Yellow;
@@ -439,7 +438,7 @@
             this.txtApellidos.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtApellidos.Font = new System.Drawing.Font("Californian FB", 12F);
             this.txtApellidos.ForeColor = System.Drawing.Color.White;
-            this.txtApellidos.HintForeColor = System.Drawing.Color.Empty;
+            this.txtApellidos.HintForeColor = System.Drawing.Color.White;
             this.txtApellidos.HintText = "";
             this.txtApellidos.isPassword = false;
             this.txtApellidos.LineFocusedColor = System.Drawing.Color.Yellow;

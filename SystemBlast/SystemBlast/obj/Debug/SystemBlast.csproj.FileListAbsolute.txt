@@ -114,3 +114,5 @@ C:\Users\User\Documents\GitHub\sistemaTotalFitness\SystemBlast\SystemBlast\obj\D
 C:\Users\User\Documents\GitHub\sistemaTotalFitness\SystemBlast\SystemBlast\obj\Debug\SystemBlast.csproj.CopyComplete
 C:\Users\User\Documents\GitHub\sistemaTotalFitness\SystemBlast\SystemBlast\obj\Debug\SystemBlast.exe
 C:\Users\User\Documents\GitHub\sistemaTotalFitness\SystemBlast\SystemBlast\obj\Debug\SystemBlast.pdb
+C:\Users\User\Documents\GitHub\sistemaTotalFitness\SystemBlast\SystemBlast\obj\Debug\SystemBlast.formEmpleado.resources
+C:\Users\User\Documents\GitHub\sistemaTotalFitness\SystemBlast\SystemBlast\obj\Debug\SystemBlast.formHorarioCliente.resources

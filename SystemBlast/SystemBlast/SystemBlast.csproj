@@ -139,8 +139,14 @@
     <EmbeddedResource Include="formClientes.resx">
       <DependentUpon>formClientes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formEmpleado.resx">
+      <DependentUpon>formEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formFactura.resx">
       <DependentUpon>formFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formHorarioCliente.resx">
+      <DependentUpon>formHorarioCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formHorarioEmpleado.resx">
       <DependentUpon>formHorarioEmpleado.cs</DependentUpon>

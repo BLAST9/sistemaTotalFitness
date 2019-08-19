@@ -185,7 +185,7 @@ namespace SystemBlast
                 this._clsCliente.idCliente = this.idCliente;
 
                 this._personRule.EliminarClientes(this._clsCliente);
-                MessageBox.Show("Actualizado Correctamente");
+                MessageBox.Show("Eliminado Correctamente");
 
                 txtCedula.Text = "";
                 txtNombres.Text = "";

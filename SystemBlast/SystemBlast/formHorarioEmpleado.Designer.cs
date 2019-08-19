@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formHorarioEmpleado));
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -37,19 +37,14 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dtgLlenardatos = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.lblNombresError = new System.Windows.Forms.Label();
-            this.lblApellidosError = new System.Windows.Forms.Label();
-            this.lblCedulaError = new System.Windows.Forms.Label();
-            this.txtCedula = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtTelefono = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtEdad = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.txtApellidos = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.txtNombres = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label10 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.bunifuDatepicker1 = new Bunifu.Framework.UI.BunifuDatepicker();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.btnSalir = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnActualizar = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnGuardar = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -126,24 +121,24 @@
             this.dtgLlenardatos.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
             this.dtgLlenardatos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtgLlenardatos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Yellow;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgLlenardatos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Yellow;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgLlenardatos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dtgLlenardatos.ColumnHeadersHeight = 30;
             this.dtgLlenardatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(49)))), ((int)(((byte)(70)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Yellow;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgLlenardatos.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(49)))), ((int)(((byte)(70)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Yellow;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgLlenardatos.DefaultCellStyle = dataGridViewCellStyle2;
             this.dtgLlenardatos.EnableHeadersVisualStyles = false;
             this.dtgLlenardatos.GridColor = System.Drawing.Color.White;
             this.dtgLlenardatos.Location = new System.Drawing.Point(13, 36);
@@ -162,18 +157,13 @@
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox1.Controls.Add(this.lblNombresError);
-            this.groupBox1.Controls.Add(this.lblApellidosError);
-            this.groupBox1.Controls.Add(this.lblCedulaError);
-            this.groupBox1.Controls.Add(this.txtCedula);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.txtTelefono);
+            this.groupBox1.Controls.Add(this.comboBox3);
+            this.groupBox1.Controls.Add(this.comboBox2);
+            this.groupBox1.Controls.Add(this.bunifuDatepicker1);
+            this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.txtEdad);
-            this.groupBox1.Controls.Add(this.txtApellidos);
-            this.groupBox1.Controls.Add(this.txtNombres);
+            this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.Yellow;
@@ -186,190 +176,101 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Registro de Clientes";
             // 
-            // lblNombresError
-            // 
-            this.lblNombresError.AutoSize = true;
-            this.lblNombresError.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombresError.ForeColor = System.Drawing.Color.White;
-            this.lblNombresError.Location = new System.Drawing.Point(10, 96);
-            this.lblNombresError.Name = "lblNombresError";
-            this.lblNombresError.Size = new System.Drawing.Size(0, 16);
-            this.lblNombresError.TabIndex = 160;
-            // 
-            // lblApellidosError
-            // 
-            this.lblApellidosError.AutoSize = true;
-            this.lblApellidosError.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblApellidosError.ForeColor = System.Drawing.Color.White;
-            this.lblApellidosError.Location = new System.Drawing.Point(388, 94);
-            this.lblApellidosError.Name = "lblApellidosError";
-            this.lblApellidosError.Size = new System.Drawing.Size(0, 16);
-            this.lblApellidosError.TabIndex = 159;
-            // 
-            // lblCedulaError
-            // 
-            this.lblCedulaError.AutoSize = true;
-            this.lblCedulaError.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCedulaError.ForeColor = System.Drawing.Color.White;
-            this.lblCedulaError.Location = new System.Drawing.Point(10, 213);
-            this.lblCedulaError.Name = "lblCedulaError";
-            this.lblCedulaError.Size = new System.Drawing.Size(0, 16);
-            this.lblCedulaError.TabIndex = 158;
-            // 
-            // txtCedula
-            // 
-            this.txtCedula.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCedula.Font = new System.Drawing.Font("Californian FB", 12F);
-            this.txtCedula.ForeColor = System.Drawing.Color.White;
-            this.txtCedula.HintForeColor = System.Drawing.Color.White;
-            this.txtCedula.HintText = "";
-            this.txtCedula.isPassword = false;
-            this.txtCedula.LineFocusedColor = System.Drawing.Color.Yellow;
-            this.txtCedula.LineIdleColor = System.Drawing.Color.Maroon;
-            this.txtCedula.LineMouseHoverColor = System.Drawing.Color.Yellow;
-            this.txtCedula.LineThickness = 3;
-            this.txtCedula.Location = new System.Drawing.Point(13, 180);
-            this.txtCedula.Margin = new System.Windows.Forms.Padding(4);
-            this.txtCedula.Name = "txtCedula";
-            this.txtCedula.Size = new System.Drawing.Size(295, 29);
-            this.txtCedula.TabIndex = 157;
-            this.txtCedula.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Californian FB", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Yellow;
-            this.label2.Location = new System.Drawing.Point(9, 154);
+            this.label2.Location = new System.Drawing.Point(9, 151);
             this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 22);
+            this.label2.Size = new System.Drawing.Size(54, 22);
             this.label2.TabIndex = 156;
-            this.label2.Text = "Cedula";
-            // 
-            // txtTelefono
-            // 
-            this.txtTelefono.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTelefono.Font = new System.Drawing.Font("Californian FB", 12F);
-            this.txtTelefono.ForeColor = System.Drawing.Color.White;
-            this.txtTelefono.HintForeColor = System.Drawing.Color.Empty;
-            this.txtTelefono.HintText = "";
-            this.txtTelefono.isPassword = false;
-            this.txtTelefono.LineFocusedColor = System.Drawing.Color.Yellow;
-            this.txtTelefono.LineIdleColor = System.Drawing.Color.Maroon;
-            this.txtTelefono.LineMouseHoverColor = System.Drawing.Color.Yellow;
-            this.txtTelefono.LineThickness = 3;
-            this.txtTelefono.Location = new System.Drawing.Point(579, 176);
-            this.txtTelefono.Margin = new System.Windows.Forms.Padding(4);
-            this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(107, 33);
-            this.txtTelefono.TabIndex = 155;
-            this.txtTelefono.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Californian FB", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Yellow;
-            this.label1.Location = new System.Drawing.Point(575, 154);
-            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 22);
-            this.label1.TabIndex = 154;
-            this.label1.Text = "Telefono";
-            // 
-            // txtEdad
-            // 
-            this.txtEdad.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtEdad.Font = new System.Drawing.Font("Californian FB", 12F);
-            this.txtEdad.ForeColor = System.Drawing.Color.White;
-            this.txtEdad.HintForeColor = System.Drawing.Color.Empty;
-            this.txtEdad.HintText = "";
-            this.txtEdad.isPassword = false;
-            this.txtEdad.LineFocusedColor = System.Drawing.Color.Yellow;
-            this.txtEdad.LineIdleColor = System.Drawing.Color.Maroon;
-            this.txtEdad.LineMouseHoverColor = System.Drawing.Color.Yellow;
-            this.txtEdad.LineThickness = 3;
-            this.txtEdad.Location = new System.Drawing.Point(391, 176);
-            this.txtEdad.Margin = new System.Windows.Forms.Padding(4);
-            this.txtEdad.Name = "txtEdad";
-            this.txtEdad.Size = new System.Drawing.Size(107, 33);
-            this.txtEdad.TabIndex = 153;
-            this.txtEdad.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // txtApellidos
-            // 
-            this.txtApellidos.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtApellidos.Font = new System.Drawing.Font("Californian FB", 12F);
-            this.txtApellidos.ForeColor = System.Drawing.Color.White;
-            this.txtApellidos.HintForeColor = System.Drawing.Color.Empty;
-            this.txtApellidos.HintText = "";
-            this.txtApellidos.isPassword = false;
-            this.txtApellidos.LineFocusedColor = System.Drawing.Color.Yellow;
-            this.txtApellidos.LineIdleColor = System.Drawing.Color.Maroon;
-            this.txtApellidos.LineMouseHoverColor = System.Drawing.Color.Yellow;
-            this.txtApellidos.LineThickness = 3;
-            this.txtApellidos.Location = new System.Drawing.Point(391, 57);
-            this.txtApellidos.Margin = new System.Windows.Forms.Padding(4);
-            this.txtApellidos.Name = "txtApellidos";
-            this.txtApellidos.Size = new System.Drawing.Size(295, 33);
-            this.txtApellidos.TabIndex = 151;
-            this.txtApellidos.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // txtNombres
-            // 
-            this.txtNombres.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtNombres.Font = new System.Drawing.Font("Californian FB", 12F);
-            this.txtNombres.ForeColor = System.Drawing.Color.White;
-            this.txtNombres.HintForeColor = System.Drawing.Color.White;
-            this.txtNombres.HintText = "";
-            this.txtNombres.isPassword = false;
-            this.txtNombres.LineFocusedColor = System.Drawing.Color.Yellow;
-            this.txtNombres.LineIdleColor = System.Drawing.Color.Maroon;
-            this.txtNombres.LineMouseHoverColor = System.Drawing.Color.Yellow;
-            this.txtNombres.LineThickness = 3;
-            this.txtNombres.Location = new System.Drawing.Point(13, 57);
-            this.txtNombres.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNombres.Name = "txtNombres";
-            this.txtNombres.Size = new System.Drawing.Size(295, 33);
-            this.txtNombres.TabIndex = 150;
-            this.txtNombres.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.label2.Text = "Fecha";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Californian FB", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Yellow;
-            this.label10.Location = new System.Drawing.Point(9, 35);
+            this.label10.Location = new System.Drawing.Point(9, 54);
             this.label10.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(74, 22);
+            this.label10.Size = new System.Drawing.Size(87, 22);
             this.label10.TabIndex = 149;
-            this.label10.Text = "Nombre";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Californian FB", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Yellow;
-            this.label3.Location = new System.Drawing.Point(387, 154);
-            this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(50, 22);
-            this.label3.TabIndex = 145;
-            this.label3.Text = "Edad";
+            this.label10.Text = "Empleado";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Californian FB", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Yellow;
-            this.label7.Location = new System.Drawing.Point(388, 35);
+            this.label7.Location = new System.Drawing.Point(388, 54);
             this.label7.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(73, 22);
+            this.label7.Size = new System.Drawing.Size(137, 22);
             this.label7.TabIndex = 144;
-            this.label7.Text = "Apellido";
+            this.label7.Text = "Hora de Entrada";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Californian FB", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Yellow;
+            this.label1.Location = new System.Drawing.Point(388, 151);
+            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(121, 22);
+            this.label1.TabIndex = 157;
+            this.label1.Text = "Hora de Salida";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Font = new System.Drawing.Font("Californian FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(13, 79);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(303, 27);
+            this.comboBox1.TabIndex = 158;
+            // 
+            // bunifuDatepicker1
+            // 
+            this.bunifuDatepicker1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.bunifuDatepicker1.BorderRadius = 0;
+            this.bunifuDatepicker1.Font = new System.Drawing.Font("Californian FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuDatepicker1.ForeColor = System.Drawing.Color.White;
+            this.bunifuDatepicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.bunifuDatepicker1.FormatCustom = null;
+            this.bunifuDatepicker1.Location = new System.Drawing.Point(13, 179);
+            this.bunifuDatepicker1.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
+            this.bunifuDatepicker1.Name = "bunifuDatepicker1";
+            this.bunifuDatepicker1.Size = new System.Drawing.Size(303, 36);
+            this.bunifuDatepicker1.TabIndex = 159;
+            this.bunifuDatepicker1.Value = new System.DateTime(2019, 8, 18, 20, 21, 31, 743);
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.Font = new System.Drawing.Font("Californian FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "5:00 AM",
+            "1:00 PM"});
+            this.comboBox2.Location = new System.Drawing.Point(392, 79);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(218, 27);
+            this.comboBox2.TabIndex = 160;
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.Font = new System.Drawing.Font("Californian FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Items.AddRange(new object[] {
+            "12: 00 PM",
+            "10: 00 PM"});
+            this.comboBox3.Location = new System.Drawing.Point(392, 188);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(218, 27);
+            this.comboBox3.TabIndex = 161;
             // 
             // btnSalir
             // 
@@ -505,6 +406,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "formHorarioEmpleado";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "formHorarioEmpleado";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -533,18 +435,13 @@
         private System.Windows.Forms.DataGridView dtgLlenardatos;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label lblNombresError;
-        private System.Windows.Forms.Label lblApellidosError;
-        private System.Windows.Forms.Label lblCedulaError;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txtCedula;
         private System.Windows.Forms.Label label2;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txtTelefono;
-        private System.Windows.Forms.Label label1;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txtEdad;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txtApellidos;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txtNombres;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label7;
+        private Bunifu.Framework.UI.BunifuDatepicker bunifuDatepicker1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox comboBox2;
     }
 }

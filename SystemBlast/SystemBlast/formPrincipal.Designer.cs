@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formPrincipal));
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBoxContraseña = new System.Windows.Forms.CheckBox();
             this.btnSalir = new System.Windows.Forms.Button();
             this.txtContraseña = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -61,7 +61,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.panel1.Controls.Add(this.checkBox1);
+            this.panel1.Controls.Add(this.checkBoxContraseña);
             this.panel1.Controls.Add(this.btnSalir);
             this.panel1.Controls.Add(this.txtContraseña);
             this.panel1.Controls.Add(this.label3);
@@ -76,18 +76,19 @@
             this.panel1.TabIndex = 0;
             this.panel1.TabStop = true;
             // 
-            // checkBox1
+            // checkBoxContraseña
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Underline);
-            this.checkBox1.ForeColor = System.Drawing.Color.White;
-            this.checkBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox1.Location = new System.Drawing.Point(133, 289);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(184, 22);
-            this.checkBox1.TabIndex = 24;
-            this.checkBox1.Text = "Mostrar Contraseña";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBoxContraseña.AutoSize = true;
+            this.checkBoxContraseña.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Underline);
+            this.checkBoxContraseña.ForeColor = System.Drawing.Color.White;
+            this.checkBoxContraseña.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.checkBoxContraseña.Location = new System.Drawing.Point(133, 289);
+            this.checkBoxContraseña.Name = "checkBoxContraseña";
+            this.checkBoxContraseña.Size = new System.Drawing.Size(184, 22);
+            this.checkBoxContraseña.TabIndex = 24;
+            this.checkBoxContraseña.Text = "Mostrar Contraseña";
+            this.checkBoxContraseña.UseVisualStyleBackColor = true;
+            this.checkBoxContraseña.CheckedChanged += new System.EventHandler(this.checkBoxContraseña_CheckedChanged);
             // 
             // btnSalir
             // 
@@ -99,6 +100,7 @@
             this.btnSalir.TabIndex = 23;
             this.btnSalir.Text = "SALIR";
             this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // txtContraseña
             // 
@@ -109,6 +111,7 @@
             this.txtContraseña.Size = new System.Drawing.Size(177, 29);
             this.txtContraseña.TabIndex = 22;
             this.txtContraseña.UseSystemPasswordChar = true;
+            this.txtContraseña.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtContraseña_KeyPress);
             // 
             // label3
             // 
@@ -206,7 +209,7 @@
 
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox checkBoxContraseña;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.TextBox txtContraseña;
         private System.Windows.Forms.Label label3;

@@ -9,6 +9,16 @@ namespace CNegocio
 {
     public class personRule
     {
+        public clsEmpleadoEntity ValidacionUsuario(string Usuario, string Contraseña)
+        {
+            using (var db = new BDModel())
+            {
+                var x = db.empleadosEntities.Where(c => c.nombreUsuario.Equals(Usuario) && c.contraseña.Equals(Contraseña)).FirstOrDefault();
+
+                return x;
+            }
+        }
+
         //Consultas de la tabla de cliente
 
         public void IsValidClienteGuardar(clsClienteEntity cliente)
@@ -131,6 +141,7 @@ namespace CNegocio
                     p.apellidos = Clientes.apellidos;
                     p.edad = Clientes.edad;
                     p.telefono = Clientes.telefono;
+                   
 
                     db.Entry(p).State = System.Data.Entity.EntityState.Modified; //Decimos que la consulta de tipo modificacion
                     db.SaveChanges(); //Guardamos los cambios
@@ -205,6 +216,76 @@ namespace CNegocio
 
         //Consulta Empleados
 
+        public void IsValidEmpleadoGuardar(clsEmpleadoEntity empleado)
+        {
+
+            if (empleado == null)
+            {
+
+                throw new Exception("es necesario ingresar los datos de uncliente");
+
+            }
+
+            if (string.IsNullOrWhiteSpace(empleado.cedula) || string.IsNullOrEmpty(empleado.cedula))
+            {
+
+                throw new Exception(" es necesario ingresar cédula");
+
+            }
+
+            if (string.IsNullOrWhiteSpace(empleado.nombres) || string.IsNullOrEmpty(empleado.nombres))
+            {
+
+                throw new Exception("es necesario ingresar nombres");
+
+            }
+
+            if (string.IsNullOrWhiteSpace(empleado.apellidos) || string.IsNullOrEmpty(empleado.apellidos))
+            {
+
+                throw new Exception("es necesario ingresar apellidos");
+
+            }
+
+            if (string.IsNullOrWhiteSpace(empleado.cargo) || string.IsNullOrEmpty(empleado.cargo))
+            {
+
+                throw new Exception("es necesario ingresar cargo");
+
+            }
+
+            if (string.IsNullOrWhiteSpace(empleado.turno) || string.IsNullOrEmpty(empleado.turno))
+            {
+
+                throw new Exception("es necesario ingresar turno");
+
+            }
+
+            if (string.IsNullOrWhiteSpace(empleado.nombreUsuario) || string.IsNullOrEmpty(empleado.nombreUsuario))
+            {
+
+                throw new Exception("es necesario ingresar nombre de usuario");
+
+            }
+
+            if (string.IsNullOrWhiteSpace(empleado.contraseña) || string.IsNullOrEmpty(empleado.contraseña))
+            {
+
+                throw new Exception("es necesario ingresar contraseña");
+
+            }
+
+            if (string.IsNullOrWhiteSpace(empleado.edad) || string.IsNullOrEmpty(empleado.edad))
+            {
+                empleado.edad = "--";
+            }
+
+            if (string.IsNullOrWhiteSpace(empleado.telefono) || string.IsNullOrEmpty(empleado.telefono))
+            {
+                empleado.telefono = "---------";
+            }
+        }
+
         public Guid GuardarEmpleado(clsEmpleadoEntity Empleado)
         {
             using (var db = new BDModel())
@@ -237,6 +318,69 @@ namespace CNegocio
             }
         }
 
+        public void IsValidEmpleadoActualizar(clsEmpleadoEntity empleado)
+        {
+
+            if (empleado == null)
+            {
+
+                throw new Exception("es necesario ingresar los datos de uncliente");
+
+            }
+
+            if (string.IsNullOrWhiteSpace(empleado.nombres) || string.IsNullOrEmpty(empleado.nombres))
+            {
+
+                throw new Exception("es necesario ingresar nombres");
+
+            }
+
+            if (string.IsNullOrWhiteSpace(empleado.apellidos) || string.IsNullOrEmpty(empleado.apellidos))
+            {
+
+                throw new Exception("es necesario ingresar apellidos");
+
+            }
+
+            if (string.IsNullOrWhiteSpace(empleado.cargo) || string.IsNullOrEmpty(empleado.cargo))
+            {
+
+                throw new Exception("es necesario ingresar cargo");
+
+            }
+
+            if (string.IsNullOrWhiteSpace(empleado.turno) || string.IsNullOrEmpty(empleado.turno))
+            {
+
+                throw new Exception("es necesario ingresar turno");
+
+            }
+
+            if (string.IsNullOrWhiteSpace(empleado.nombreUsuario) || string.IsNullOrEmpty(empleado.nombreUsuario))
+            {
+
+                throw new Exception("es necesario ingresar nombre de usuario");
+
+            }
+
+            if (string.IsNullOrWhiteSpace(empleado.contraseña) || string.IsNullOrEmpty(empleado.contraseña))
+            {
+
+                throw new Exception("es necesario ingresar contraseña");
+
+            }
+
+            if (string.IsNullOrWhiteSpace(empleado.edad) || string.IsNullOrEmpty(empleado.edad))
+            {
+                empleado.edad = "--";
+            }
+
+            if (string.IsNullOrWhiteSpace(empleado.telefono) || string.IsNullOrEmpty(empleado.telefono))
+            {
+                empleado.telefono = "---------";
+            }
+        }
+
         public void ActualizarEmpleados(clsEmpleadoEntity Empleados)
         {
             using (var db = new BDModel())
@@ -248,6 +392,7 @@ namespace CNegocio
                     p.nombres = Empleados.nombres;
                     p.apellidos = Empleados.apellidos;
                     p.telefono = Empleados.telefono;
+                    p.edad = Empleados.edad;
                     p.cargo = Empleados.cargo;
                     p.nombreUsuario = Empleados.nombreUsuario;
                     p.contraseña = Empleados.contraseña;
