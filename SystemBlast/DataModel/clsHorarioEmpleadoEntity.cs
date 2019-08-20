@@ -33,11 +33,11 @@ namespace DataModel
             Property(c => c.horarioEntrada)
                 .IsRequired()
                 .HasColumnType("varchar")
-                .HasMaxLength(6);
+                .HasMaxLength(8);
             Property(c => c.horarioSalida)
                 .IsRequired()
                 .HasColumnType("varchar")
-                .HasMaxLength(6);
+                .HasMaxLength(8);
         }
 
     }

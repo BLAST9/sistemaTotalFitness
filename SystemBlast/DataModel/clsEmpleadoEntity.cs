@@ -58,7 +58,7 @@ namespace DataModel
             Property(c => c.cargo)
                 .IsRequired()
                 .HasColumnType("nvarchar")
-                .HasMaxLength(10);
+                .HasMaxLength(15);
             Property(c => c.nombreUsuario)
                 .IsRequired()
                 .HasColumnType("nvarchar")

@@ -35,6 +35,7 @@ namespace SystemBlast
         {
             this.List();
             this.FormLoad = true;
+            cbClientes.Text = "";
         }
 
         private void cbClientes_SelectedIndexChanged(object sender, EventArgs e)
@@ -65,28 +66,81 @@ namespace SystemBlast
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            _personRule.GuardarHorariosClientes(this._horarioClientes);
+            if (cbClientes.Text == "")
+            {
+                MessageBox.Show("Es necesario ingresar un cliente");
+            }
 
-            this._clientesHorarios.idCliente = this._clientesHorarios.idCliente;
-            this._clientesHorarios.idHorarioCliente = this._horarioClientes.idHorarioCliente;
+            else
+            {
+                try
+                {
 
-            _personRule.GuardarClientesHorarios(this._clientesHorarios);
+                    _personRule.GuardarHorariosClientes(this._horarioClientes);
 
-            MessageBox.Show("Se guardo correctamente");
+                    this._clientesHorarios.idCliente = this._clientesHorarios.idCliente;
+                    this._clientesHorarios.idHorarioCliente = this._horarioClientes.idHorarioCliente;
 
-            cbClientes.Text = "";
-            txtHoraEntrada.Text = "";
-            txtHoraSalida.Text = "";
-            dtFecha.Text = "";
+                    _personRule.IsValidHorarioClienteGuardar(this._horarioClientes, this._clientesHorarios);
 
-            cbClientes.Focus();
+                    _personRule.GuardarClientesHorarios(this._clientesHorarios);
 
-            this.List();
+                    MessageBox.Show("Se guardo correctamente");
+                   
+                    txtHoraEntrada.Text = "";
+                    txtHoraSalida.Text = "";
+                    dtFecha.Text = "";
+
+                    cbClientes.Focus();
+
+                    this.List();
+                    cbClientes.Text = "";
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error" + ex.Message);
+                }
+            }
+  
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
+            DialogResult R = MessageBox.Show("Seguro desea eliminar los datos ", "", MessageBoxButtons.YesNo);
 
+            if (R == DialogResult.Yes)
+            {
+                this._horarioClientes.idHorarioCliente = this.idHorarioCliente;
+
+                this._personRule.EliminarHorariosClientes(this._horarioClientes);
+                MessageBox.Show("Eliminado Correctamente");
+
+                cbClientes.Text = "";
+                txtHoraEntrada.Text = "";
+                txtHoraSalida.Text = "";
+                dtFecha.Text = "";
+
+                cbClientes.Focus();
+
+                this.List();
+                btnGuardar.Enabled = true;
+
+            }
+
+            else
+            {
+                if (R == DialogResult.No)
+                {
+                    MessageBox.Show("Ah canselado el proceso exitosamente");
+                    cbClientes.Text = "";
+                    txtHoraEntrada.Text = "";
+                    txtHoraSalida.Text = "";
+                    dtFecha.Text = "";
+
+                    cbClientes.Focus();
+                    btnGuardar.Enabled = true;
+                }
+            }
         }
 
         private void btnLimpiar_Click(object sender, EventArgs e)
@@ -97,7 +151,7 @@ namespace SystemBlast
             dtFecha.Text = "";
 
             cbClientes.Focus();
-
+            btnGuardar.Enabled = true;
             this.List();
         }
 
@@ -143,6 +197,46 @@ namespace SystemBlast
             this.Close();
         }
 
-      
+        private void txtHoraEntrada_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsLetter(e.KeyChar))
+                e.Handled = false;
+            else if (Char.IsControl(e.KeyChar))
+                e.Handled = false;
+            else if (Char.IsSeparator(e.KeyChar))
+                e.Handled = false;
+            else if (Char.IsPunctuation(e.KeyChar))
+                e.Handled = false;
+            else if (Char.IsNumber(e.KeyChar))
+                e.Handled = false;
+            else e.Handled = true; ;
+
+
+            if (txtHoraEntrada.Text.Length == 8)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtHoraSalida_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsLetter(e.KeyChar))
+                e.Handled = false;
+            else if (Char.IsControl(e.KeyChar))
+                e.Handled = false;
+            else if (Char.IsSeparator(e.KeyChar))
+                e.Handled = false;
+            else if (Char.IsPunctuation(e.KeyChar))
+                e.Handled = false;
+            else if (Char.IsNumber(e.KeyChar))
+                e.Handled = false;
+            else e.Handled = true; ;
+
+
+            if (txtHoraSalida.Text.Length == 8)
+            {
+                e.Handled = true;
+            }
+        }
     }
 }

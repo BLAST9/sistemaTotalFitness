@@ -744,32 +744,69 @@ namespace SystemBlast
 
         private void btnRegistroMensualidad_Click(object sender, EventArgs e)
         {
+            btnControlPrincipal.Visible = false;
+            formMensualidad x = new formMensualidad();
+            x.MdiParent = this;
+            x.BringToFront();
+            x.Show();
 
+            x.Left = 0;
         }
 
         private void btnMensualidadEjercicio_Click(object sender, EventArgs e)
         {
+            btnControlPrincipal.Visible = false;
+            formMensualidadEjercicio x = new formMensualidadEjercicio();
+            x.MdiParent = this;
+            x.BringToFront();
+            x.Show();
 
+            x.Left = 0;
         }
 
         private void btnTipoEjercicio_Click(object sender, EventArgs e)
         {
+            btnControlPrincipal.Visible = false;
+            formTipoEjercicio x = new formTipoEjercicio();
+            x.MdiParent = this;
+            x.BringToFront();
+            x.Show();
 
+            x.Left = 0;
         }
 
         private void btnProductos_Click(object sender, EventArgs e)
         {
+            btnControlPrincipal.Visible = false;
+            formProductos x = new formProductos();
+            x.MdiParent = this;
+            x.BringToFront();
+            x.Show();
 
+            x.Left = 0;
         }
 
         private void btnFacturas_Click(object sender, EventArgs e)
         {
+            btnControlPrincipal.Visible = false;
+            formFactura x = new formFactura();
+            x.MdiParent = this;
+            x.BringToFront();
+            x.Show();
 
+            x.Left = 0;
         }
 
         private void btnExtras_Click(object sender, EventArgs e)
         {
+            btnControlPrincipal.Visible = false;
+            formExtras x = new formExtras();
+            x.MdiParent = this;
+            x.BringToFront();
+            x.Show();
 
+            x.Left = 0;
         }
+
     }
 }

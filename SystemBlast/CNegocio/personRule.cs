@@ -468,6 +468,32 @@ namespace CNegocio
 
         //Consulta HorariosClientes
 
+        public void IsValidHorarioClienteGuardar(clsHorarioClienteEntity horarioCliente, clsClienteHorarioEntity clienteHorario)
+        {
+
+            if (horarioCliente == null)
+            {
+
+                throw new Exception("es necesario ingresar los datos de un cliente");
+
+            }
+
+            if (string.IsNullOrWhiteSpace(horarioCliente.horarioEntrada) || string.IsNullOrEmpty(horarioCliente.horarioEntrada))
+            {
+
+                throw new Exception("es necesario ingresar la hora de entrada del cliente");
+
+            }
+
+            if (string.IsNullOrWhiteSpace(horarioCliente.horarioSalida) || string.IsNullOrEmpty(horarioCliente.horarioSalida))
+            {
+
+                throw new Exception("es necesario ingresar la hora de salida del cliente");
+
+            }
+
+        }
+
         public Guid GuardarHorariosClientes(clsHorarioClienteEntity Horario)
         {
             using (var db = new BDModel())
@@ -514,22 +540,6 @@ namespace CNegocio
             }
         }
 
-        public void ActualizarHorariosClientes(clsHorarioClienteEntity Horario)
-        {
-            using (var db = new BDModel())
-            {
-                var p = db.horariosClientesEntities.Where(c => c.idHorarioCliente == Horario.idHorarioCliente).FirstOrDefault();
-
-                if (p != null)
-                {
-                    p.horarioSalida = Horario.horarioSalida;
-
-                    db.Entry(p).State = System.Data.Entity.EntityState.Modified;
-                    db.SaveChanges();
-                }
-            }
-        }
-
         public void EliminarHorariosClientes(clsHorarioClienteEntity Horario)
         {
             using (var db = new BDModel())
@@ -545,6 +555,32 @@ namespace CNegocio
         }
 
         //Consulta HorariosEmpleado
+
+        public void IsValidHorarioEmpleadoGuardar(clsHorarioEmpleadoEntity horarioEmpleados)
+        {
+
+            if (horarioEmpleados == null)
+            {
+
+                throw new Exception("es necesario ingresar los datos de un empleado");
+
+            }
+
+            if (string.IsNullOrWhiteSpace(horarioEmpleados.horarioEntrada) || string.IsNullOrEmpty(horarioEmpleados.horarioEntrada))
+            {
+
+                throw new Exception("es necesario ingresar la hora de entrada del cliente");
+
+            }
+
+            if (string.IsNullOrWhiteSpace(horarioEmpleados.horarioSalida) || string.IsNullOrEmpty(horarioEmpleados.horarioSalida))
+            {
+
+                throw new Exception("es necesario ingresar la hora de salida del cliente");
+
+            }
+
+        }
 
         public Guid GuardarHorariosEmpleado(clsHorarioEmpleadoEntity Horario)
         {
@@ -564,14 +600,35 @@ namespace CNegocio
             }
 
         }
-        public List<clsHorarioEmpleadoEntity> ListaHorariosEmpleado(DateTime Fecha)
+
+        public class horarioEmpleado
+        {
+            public Guid idHorarioEmpleado { get; set; }
+            public DateTime fecha { get; set; }
+            public string horaEntrada { get; set; }
+            public string horaSalida { get; set; }
+            public string nombres { get; set; }
+
+            public string apellidos { get; set; }
+        }
+
+        public List<horarioEmpleado> ListaHorariosEmpleado()
         {
             using (var db = new BDModel())
             {
 
-                var Horarioempleado = (from c in db.horariosEmpleadosEntities
-                                      where (c.fecha == Fecha)
-                                      select c).ToList();
+                var Horarioempleado = (from c in db.empleadosEntities
+                                       join x in db.horariosEmpleadosEntities
+                                       on c.idEmpleado equals x.idEmpleado
+                                       select new horarioEmpleado
+                                       {
+                                           idHorarioEmpleado = x.idHorarioEmpleado,
+                                           fecha = x.fecha,
+                                           horaEntrada = x.horarioEntrada,
+                                           horaSalida = x.horarioSalida,
+                                           nombres = c.nombres,
+                                           apellidos = c.apellidos
+                                       }).ToList();
 
                 return Horarioempleado;
 

@@ -12,9 +12,6 @@ namespace DataModel
         public Guid idMensualidadEjercicio { get; set; }
         public DateTime fechaPagoMensualidad { get; set; }
         public int cantidad { get; set; }
-        public int precio { get; set; }
-        public DateTime fechInicio { get; set; }
-        public DateTime fechaCierre { get; set; }
         public Guid idMensualidad { get; set; }
         public Guid idTipoEjercicio { get; set; }
     }
@@ -36,13 +33,6 @@ namespace DataModel
             Property(c => c.cantidad)
                 .IsRequired()
                 .HasColumnType("int");
-            Property(c => c.precio)
-               .IsRequired()
-               .HasColumnType("int");
-            Property(c => c.fechInicio)
-                .IsRequired();
-            Property(c => c.fechaCierre)
-               .IsRequired();
         }
     }
 }

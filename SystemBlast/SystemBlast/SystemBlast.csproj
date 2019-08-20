@@ -151,6 +151,12 @@
     <EmbeddedResource Include="formHorarioEmpleado.resx">
       <DependentUpon>formHorarioEmpleado.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formMensualidad.resx">
+      <DependentUpon>formMensualidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formMensualidadEjercicio.resx">
+      <DependentUpon>formMensualidadEjercicio.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formMenu.resx">
       <DependentUpon>formMenu.cs</DependentUpon>
     </EmbeddedResource>
@@ -159,6 +165,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formProductos.resx">
       <DependentUpon>formProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formTipoEjercicio.resx">
+      <DependentUpon>formTipoEjercicio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -66,21 +66,21 @@ namespace SystemBlast
 
         public void ValidarUsuario()
         {
-            var x = _personRule.ValidacionUsuario(txtUsuario.Text, txtContraseña.Text);
+           /* var x = _personRule.ValidacionUsuario(txtUsuario.Text, txtContraseña.Text);
 
              if (x != null)
              {
-                this.Visible = false;
+                */this.Visible = false;
                 formMenu y = new formMenu();
                 y.ShowDialog();
                 this.Visible = true;
-             }
+             /*}
 
              else
              {
                  MessageBox.Show("Usuario o contraseña incorrecto");
              }
-             
+             */
             txtUsuario.Text = "";
             txtContraseña.Text = "";
             txtUsuario.Focus();
