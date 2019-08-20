@@ -42,6 +42,7 @@
             this.dtgLlenardatos = new System.Windows.Forms.DataGridView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtCantidadExistencia = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtCantidad = new System.Windows.Forms.TextBox();
@@ -49,7 +50,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtCantidadExistencia = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).BeginInit();
             this.groupBox3.SuspendLayout();
@@ -289,6 +289,16 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Registro de pago mensual";
             // 
+            // txtCantidadExistencia
+            // 
+            this.txtCantidadExistencia.Enabled = false;
+            this.txtCantidadExistencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCantidadExistencia.Location = new System.Drawing.Point(522, 80);
+            this.txtCantidadExistencia.Name = "txtCantidadExistencia";
+            this.txtCantidadExistencia.Size = new System.Drawing.Size(155, 26);
+            this.txtCantidadExistencia.TabIndex = 176;
+            this.txtCantidadExistencia.TextChanged += new System.EventHandler(this.txtCantidadExistencia_TextChanged);
+            // 
             // txtNombre
             // 
             this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -363,15 +373,6 @@
             this.label2.Size = new System.Drawing.Size(85, 24);
             this.label2.TabIndex = 168;
             this.label2.Text = "Nombre";
-            // 
-            // txtCantidadExistencia
-            // 
-            this.txtCantidadExistencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCantidadExistencia.Location = new System.Drawing.Point(522, 80);
-            this.txtCantidadExistencia.Name = "txtCantidadExistencia";
-            this.txtCantidadExistencia.Size = new System.Drawing.Size(155, 26);
-            this.txtCantidadExistencia.TabIndex = 176;
-            this.txtCantidadExistencia.TextChanged += new System.EventHandler(this.txtCantidadExistencia_TextChanged);
             // 
             // formProductos
             // 

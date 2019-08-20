@@ -34,6 +34,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnSalir = new Bunifu.Framework.UI.BunifuImageButton();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btnFactura = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnActualizar = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnGuardar = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnLimpiar = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnEliminar = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -41,16 +43,14 @@
             this.dtgLlenardatos = new System.Windows.Forms.DataGridView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.dtFecha = new Bunifu.Framework.UI.BunifuDatepicker();
             this.txtHoraEntrada = new System.Windows.Forms.TextBox();
             this.cbClientes = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnActualizar = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnFactura = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).BeginInit();
             this.groupBox3.SuspendLayout();
@@ -98,6 +98,56 @@
             this.groupBox3.Size = new System.Drawing.Size(325, 103);
             this.groupBox3.TabIndex = 134;
             this.groupBox3.TabStop = false;
+            // 
+            // btnFactura
+            // 
+            this.btnFactura.ActiveBorderThickness = 1;
+            this.btnFactura.ActiveCornerRadius = 20;
+            this.btnFactura.ActiveFillColor = System.Drawing.Color.LawnGreen;
+            this.btnFactura.ActiveForecolor = System.Drawing.Color.Black;
+            this.btnFactura.ActiveLineColor = System.Drawing.Color.LawnGreen;
+            this.btnFactura.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.btnFactura.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFactura.BackgroundImage")));
+            this.btnFactura.ButtonText = "Factura";
+            this.btnFactura.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnFactura.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFactura.ForeColor = System.Drawing.Color.Black;
+            this.btnFactura.IdleBorderThickness = 1;
+            this.btnFactura.IdleCornerRadius = 20;
+            this.btnFactura.IdleFillColor = System.Drawing.Color.Yellow;
+            this.btnFactura.IdleForecolor = System.Drawing.Color.Black;
+            this.btnFactura.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnFactura.Location = new System.Drawing.Point(244, 9);
+            this.btnFactura.Margin = new System.Windows.Forms.Padding(5);
+            this.btnFactura.Name = "btnFactura";
+            this.btnFactura.Size = new System.Drawing.Size(77, 40);
+            this.btnFactura.TabIndex = 132;
+            this.btnFactura.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnActualizar
+            // 
+            this.btnActualizar.ActiveBorderThickness = 1;
+            this.btnActualizar.ActiveCornerRadius = 20;
+            this.btnActualizar.ActiveFillColor = System.Drawing.Color.LawnGreen;
+            this.btnActualizar.ActiveForecolor = System.Drawing.Color.Black;
+            this.btnActualizar.ActiveLineColor = System.Drawing.Color.LawnGreen;
+            this.btnActualizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.btnActualizar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnActualizar.BackgroundImage")));
+            this.btnActualizar.ButtonText = "Actualizar";
+            this.btnActualizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnActualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnActualizar.ForeColor = System.Drawing.Color.Black;
+            this.btnActualizar.IdleBorderThickness = 1;
+            this.btnActualizar.IdleCornerRadius = 20;
+            this.btnActualizar.IdleFillColor = System.Drawing.Color.Yellow;
+            this.btnActualizar.IdleForecolor = System.Drawing.Color.Black;
+            this.btnActualizar.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnActualizar.Location = new System.Drawing.Point(4, 55);
+            this.btnActualizar.Margin = new System.Windows.Forms.Padding(5);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.Size = new System.Drawing.Size(112, 40);
+            this.btnActualizar.TabIndex = 131;
+            this.btnActualizar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnGuardar
             // 
@@ -261,6 +311,27 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Registro de pago mensual";
             // 
+            // comboBox1
+            // 
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(383, 79);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(303, 28);
+            this.comboBox1.TabIndex = 167;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Yellow;
+            this.label1.Location = new System.Drawing.Point(379, 54);
+            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(138, 24);
+            this.label1.TabIndex = 166;
+            this.label1.Text = "Tipo ejercicio";
+            // 
             // dtFecha
             // 
             this.dtFecha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
@@ -328,77 +399,6 @@
             this.label7.Size = new System.Drawing.Size(92, 24);
             this.label7.TabIndex = 144;
             this.label7.Text = "Cantidad";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(383, 79);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(303, 28);
-            this.comboBox1.TabIndex = 167;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Yellow;
-            this.label1.Location = new System.Drawing.Point(379, 54);
-            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(138, 24);
-            this.label1.TabIndex = 166;
-            this.label1.Text = "Tipo ejercicio";
-            // 
-            // btnActualizar
-            // 
-            this.btnActualizar.ActiveBorderThickness = 1;
-            this.btnActualizar.ActiveCornerRadius = 20;
-            this.btnActualizar.ActiveFillColor = System.Drawing.Color.LawnGreen;
-            this.btnActualizar.ActiveForecolor = System.Drawing.Color.Black;
-            this.btnActualizar.ActiveLineColor = System.Drawing.Color.LawnGreen;
-            this.btnActualizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.btnActualizar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnActualizar.BackgroundImage")));
-            this.btnActualizar.ButtonText = "Actualizar";
-            this.btnActualizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnActualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnActualizar.ForeColor = System.Drawing.Color.Black;
-            this.btnActualizar.IdleBorderThickness = 1;
-            this.btnActualizar.IdleCornerRadius = 20;
-            this.btnActualizar.IdleFillColor = System.Drawing.Color.Yellow;
-            this.btnActualizar.IdleForecolor = System.Drawing.Color.Black;
-            this.btnActualizar.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.btnActualizar.Location = new System.Drawing.Point(4, 55);
-            this.btnActualizar.Margin = new System.Windows.Forms.Padding(5);
-            this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(112, 40);
-            this.btnActualizar.TabIndex = 131;
-            this.btnActualizar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnFactura
-            // 
-            this.btnFactura.ActiveBorderThickness = 1;
-            this.btnFactura.ActiveCornerRadius = 20;
-            this.btnFactura.ActiveFillColor = System.Drawing.Color.LawnGreen;
-            this.btnFactura.ActiveForecolor = System.Drawing.Color.Black;
-            this.btnFactura.ActiveLineColor = System.Drawing.Color.LawnGreen;
-            this.btnFactura.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.btnFactura.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFactura.BackgroundImage")));
-            this.btnFactura.ButtonText = "Factura";
-            this.btnFactura.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnFactura.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFactura.ForeColor = System.Drawing.Color.Black;
-            this.btnFactura.IdleBorderThickness = 1;
-            this.btnFactura.IdleCornerRadius = 20;
-            this.btnFactura.IdleFillColor = System.Drawing.Color.Yellow;
-            this.btnFactura.IdleForecolor = System.Drawing.Color.Black;
-            this.btnFactura.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.btnFactura.Location = new System.Drawing.Point(244, 9);
-            this.btnFactura.Margin = new System.Windows.Forms.Padding(5);
-            this.btnFactura.Name = "btnFactura";
-            this.btnFactura.Size = new System.Drawing.Size(77, 40);
-            this.btnFactura.TabIndex = 132;
-            this.btnFactura.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // formMensualidadEjercicio
             // 

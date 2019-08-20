@@ -687,20 +687,27 @@ namespace CNegocio
 
         }
 
-        public void ActualizarMensualidad(clsMensualidadEntity Men)
+        public class mensualidad
+        {
+            public Guid idMensualidad { get; set; }
+            public string Nombres { get; set; }
+            public string Apellidos { get; set; }
+            public DateTime fechaInicio { get; set; }
+            public DateTime fechaCierre{ get; set; }
+
+           
+        }
+
+        public List<mensualidad> ListaMensualidad()
         {
             using (var db = new BDModel())
             {
-                var p = db.mensualidadesEntities.Where(c => c.idMensualidad == Men.idMensualidad).FirstOrDefault();
+                var mensualidadlist = (from c in db.mensualidadesEntities join x in db.clientesEntities
+                                       on c.idCliente equals x.idCliente
+                                       select new mensualidad { idMensualidad = c.idMensualidad, Nombres = x.nombres, Apellidos = x.apellidos , fechaInicio = c.fechaInicio, fechaCierre = c.fechaCierre}).ToList();
 
-                if (p != null)
-                {
-                    p.fechaInicio = Men.fechaInicio;
-                    p.fechaCierre = Men.fechaCierre;
+                return mensualidadlist;
 
-                    db.Entry(p).State = System.Data.Entity.EntityState.Modified;
-                    db.SaveChanges();
-                }
             }
         }
 
@@ -840,6 +847,31 @@ namespace CNegocio
 
         //Consulta TipoEjercicio
 
+        public void IsValidTipoEjercicioGuardar(clsTipoEjercicioEntity ejercicio)
+        {
+
+            if (ejercicio == null)
+            {
+
+                throw new Exception("es necesario ingresar los datos de un dato");
+
+            }
+
+            if (string.IsNullOrWhiteSpace(ejercicio.tipoEjercicio) || string.IsNullOrEmpty(ejercicio.tipoEjercicio))
+            {
+
+                throw new Exception(" es necesario ingresar tipo de ejercicio");
+
+            }
+            if (string.IsNullOrWhiteSpace(ejercicio.Precio.ToString()) || string.IsNullOrEmpty(ejercicio.Precio.ToString()))
+            {
+
+                throw new Exception("es necesario ingresar precio");
+
+            }
+
+        }
+
         public Guid GuardarTipoEjercicio(clsTipoEjercicioEntity tipoejer)
         {
             using (var db = new BDModel())
@@ -858,13 +890,12 @@ namespace CNegocio
             }
 
         }
-        public List<clsTipoEjercicioEntity> ListaTipoEjercicio(string Ejercicio)
+        public List<clsTipoEjercicioEntity> ListaTipoEjercicio()
         {
             using (var db = new BDModel())
             {
 
                 var Tipoe = (from c in db.tiposEjerciciosEntities
-                                where (c.tipoEjercicio).StartsWith(Ejercicio)
                                 select c).ToList();
 
                 return Tipoe;

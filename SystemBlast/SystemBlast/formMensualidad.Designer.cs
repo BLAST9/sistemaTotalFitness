@@ -41,9 +41,9 @@
             this.dtgLlenardatos = new System.Windows.Forms.DataGridView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.bunifuDatepicker1 = new Bunifu.Framework.UI.BunifuDatepicker();
+            this.dtFechaCierre = new Bunifu.Framework.UI.BunifuDatepicker();
             this.label1 = new System.Windows.Forms.Label();
-            this.dtFecha = new Bunifu.Framework.UI.BunifuDatepicker();
+            this.dtFechaInicio = new Bunifu.Framework.UI.BunifuDatepicker();
             this.cbClientes = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -81,6 +81,7 @@
             this.btnSalir.TabIndex = 131;
             this.btnSalir.TabStop = false;
             this.btnSalir.Zoom = 10;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // groupBox3
             // 
@@ -117,6 +118,7 @@
             this.btnGuardar.Size = new System.Drawing.Size(112, 40);
             this.btnGuardar.TabIndex = 128;
             this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnLimpiar
             // 
@@ -142,6 +144,7 @@
             this.btnLimpiar.Size = new System.Drawing.Size(112, 40);
             this.btnLimpiar.TabIndex = 130;
             this.btnLimpiar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // btnEliminar
             // 
@@ -167,6 +170,7 @@
             this.btnEliminar.Size = new System.Drawing.Size(112, 40);
             this.btnEliminar.TabIndex = 129;
             this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // groupBox2
             // 
@@ -218,8 +222,9 @@
             this.dtgLlenardatos.RowHeadersVisible = false;
             this.dtgLlenardatos.RowHeadersWidth = 100;
             this.dtgLlenardatos.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dtgLlenardatos.Size = new System.Drawing.Size(673, 233);
+            this.dtgLlenardatos.Size = new System.Drawing.Size(673, 250);
             this.dtgLlenardatos.TabIndex = 137;
+            this.dtgLlenardatos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgLlenardatos_CellContentClick);
             // 
             // pictureBox1
             // 
@@ -227,7 +232,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(771, 43);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(325, 461);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 132;
             this.pictureBox1.TabStop = false;
             // 
@@ -236,9 +241,9 @@
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox1.Controls.Add(this.bunifuDatepicker1);
+            this.groupBox1.Controls.Add(this.dtFechaCierre);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.dtFecha);
+            this.groupBox1.Controls.Add(this.dtFechaInicio);
             this.groupBox1.Controls.Add(this.cbClientes);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label10);
@@ -253,20 +258,21 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Mensualidad";
             // 
-            // bunifuDatepicker1
+            // dtFechaCierre
             // 
-            this.bunifuDatepicker1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.bunifuDatepicker1.BorderRadius = 0;
-            this.bunifuDatepicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuDatepicker1.ForeColor = System.Drawing.Color.White;
-            this.bunifuDatepicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.bunifuDatepicker1.FormatCustom = null;
-            this.bunifuDatepicker1.Location = new System.Drawing.Point(383, 174);
-            this.bunifuDatepicker1.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
-            this.bunifuDatepicker1.Name = "bunifuDatepicker1";
-            this.bunifuDatepicker1.Size = new System.Drawing.Size(303, 36);
-            this.bunifuDatepicker1.TabIndex = 167;
-            this.bunifuDatepicker1.Value = new System.DateTime(2019, 8, 19, 0, 0, 0, 0);
+            this.dtFechaCierre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.dtFechaCierre.BorderRadius = 0;
+            this.dtFechaCierre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtFechaCierre.ForeColor = System.Drawing.Color.White;
+            this.dtFechaCierre.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dtFechaCierre.FormatCustom = null;
+            this.dtFechaCierre.Location = new System.Drawing.Point(383, 174);
+            this.dtFechaCierre.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
+            this.dtFechaCierre.Name = "dtFechaCierre";
+            this.dtFechaCierre.Size = new System.Drawing.Size(303, 36);
+            this.dtFechaCierre.TabIndex = 167;
+            this.dtFechaCierre.Value = new System.DateTime(2019, 8, 19, 0, 0, 0, 0);
+            this.dtFechaCierre.onValueChanged += new System.EventHandler(this.dtFechaCierre_onValueChanged);
             // 
             // label1
             // 
@@ -280,20 +286,21 @@
             this.label1.TabIndex = 166;
             this.label1.Text = "Fecha Cierre";
             // 
-            // dtFecha
+            // dtFechaInicio
             // 
-            this.dtFecha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.dtFecha.BorderRadius = 0;
-            this.dtFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtFecha.ForeColor = System.Drawing.Color.White;
-            this.dtFecha.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dtFecha.FormatCustom = null;
-            this.dtFecha.Location = new System.Drawing.Point(5, 174);
-            this.dtFecha.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
-            this.dtFecha.Name = "dtFecha";
-            this.dtFecha.Size = new System.Drawing.Size(303, 36);
-            this.dtFecha.TabIndex = 165;
-            this.dtFecha.Value = new System.DateTime(2019, 8, 19, 0, 0, 0, 0);
+            this.dtFechaInicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.dtFechaInicio.BorderRadius = 0;
+            this.dtFechaInicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtFechaInicio.ForeColor = System.Drawing.Color.White;
+            this.dtFechaInicio.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dtFechaInicio.FormatCustom = null;
+            this.dtFechaInicio.Location = new System.Drawing.Point(5, 174);
+            this.dtFechaInicio.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
+            this.dtFechaInicio.Name = "dtFechaInicio";
+            this.dtFechaInicio.Size = new System.Drawing.Size(303, 36);
+            this.dtFechaInicio.TabIndex = 165;
+            this.dtFechaInicio.Value = new System.DateTime(2019, 8, 19, 0, 0, 0, 0);
+            this.dtFechaInicio.onValueChanged += new System.EventHandler(this.dtFechaInicio_onValueChanged);
             // 
             // cbClientes
             // 
@@ -303,6 +310,7 @@
             this.cbClientes.Name = "cbClientes";
             this.cbClientes.Size = new System.Drawing.Size(303, 28);
             this.cbClientes.TabIndex = 158;
+            this.cbClientes.SelectedIndexChanged += new System.EventHandler(this.cbClientes_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -339,6 +347,7 @@
             this.Name = "formMensualidad";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "formMensualidad";
+            this.Load += new System.EventHandler(this.formMensualidad_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).EndInit();
             this.groupBox3.ResumeLayout(false);
@@ -363,11 +372,11 @@
         private System.Windows.Forms.DataGridView dtgLlenardatos;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private Bunifu.Framework.UI.BunifuDatepicker dtFecha;
+        private Bunifu.Framework.UI.BunifuDatepicker dtFechaInicio;
         private System.Windows.Forms.ComboBox cbClientes;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label10;
-        private Bunifu.Framework.UI.BunifuDatepicker bunifuDatepicker1;
+        private Bunifu.Framework.UI.BunifuDatepicker dtFechaCierre;
         private System.Windows.Forms.Label label1;
     }
 }

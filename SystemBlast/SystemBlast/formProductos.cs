@@ -37,12 +37,23 @@ namespace SystemBlast
 
         private void txtCantidad_TextChanged(object sender, EventArgs e)
         {
-            _productos.cantidadTotal = Convert.ToInt32(txtCantidad.Text);
+            if (!string.IsNullOrWhiteSpace(txtCantidad.Text) || !string.IsNullOrEmpty(txtCantidad.Text))
+                _productos.cantidadTotal = Convert.ToInt32(txtCantidad.Text);
+            else
+                this._productos.cantidadTotal = 0;
+
+            if (!string.IsNullOrWhiteSpace(txtCantidad.Text) || !string.IsNullOrEmpty(txtCantidad.Text))
+                _productos.cantidadExistencia = Convert.ToInt32(txtCantidad.Text);
+            else
+                this._productos.cantidadExistencia = 0;
         }
 
         private void txtCantidadExistencia_TextChanged(object sender, EventArgs e)
         {
-            _productos.cantidadExistencia = 200;
+            if (!string.IsNullOrWhiteSpace(txtCantidad.Text) || !string.IsNullOrEmpty(txtCantidad.Text))
+                _productos.cantidadExistencia =+ Convert.ToInt32(txtCantidad.Text);
+            else
+                this._productos.cantidadExistencia = 0;
         }
 
         private void txtDescripcion_TextChanged(object sender, EventArgs e)
