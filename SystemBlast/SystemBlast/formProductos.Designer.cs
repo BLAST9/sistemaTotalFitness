@@ -237,8 +237,8 @@
             this.dtgLlenardatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(49)))), ((int)(((byte)(70)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Yellow;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
@@ -254,6 +254,7 @@
             this.dtgLlenardatos.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dtgLlenardatos.Size = new System.Drawing.Size(673, 233);
             this.dtgLlenardatos.TabIndex = 137;
+            this.dtgLlenardatos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgLlenardatos_CellContentClick);
             // 
             // pictureBox1
             // 
@@ -298,6 +299,7 @@
             this.txtCantidadExistencia.Size = new System.Drawing.Size(155, 26);
             this.txtCantidadExistencia.TabIndex = 176;
             this.txtCantidadExistencia.TextChanged += new System.EventHandler(this.txtCantidadExistencia_TextChanged);
+            this.txtCantidadExistencia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCantidadExistencia_KeyPress);
             // 
             // txtNombre
             // 
@@ -307,6 +309,7 @@
             this.txtNombre.Size = new System.Drawing.Size(155, 26);
             this.txtNombre.TabIndex = 175;
             this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
+            this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombre_KeyPress);
             // 
             // label4
             // 
@@ -328,6 +331,7 @@
             this.txtCantidad.Size = new System.Drawing.Size(155, 26);
             this.txtCantidad.TabIndex = 173;
             this.txtCantidad.TextChanged += new System.EventHandler(this.txtCantidad_TextChanged);
+            this.txtCantidad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCantidad_KeyPress);
             // 
             // label5
             // 
@@ -361,6 +365,7 @@
             this.txtDescripcion.Size = new System.Drawing.Size(650, 26);
             this.txtDescripcion.TabIndex = 169;
             this.txtDescripcion.TextChanged += new System.EventHandler(this.txtDescripcion_TextChanged);
+            this.txtDescripcion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDescripcion_KeyPress);
             // 
             // label2
             // 

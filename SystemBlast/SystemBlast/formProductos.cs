@@ -27,12 +27,13 @@ namespace SystemBlast
 
         private void formProductos_Load(object sender, EventArgs e)
         {
-
+            this.List();
         }
 
         private void txtNombre_TextChanged(object sender, EventArgs e)
         {
             _productos.nombre = txtNombre.Text;
+            this.List();
         }
 
         private void txtCantidad_TextChanged(object sender, EventArgs e)
@@ -67,7 +68,7 @@ namespace SystemBlast
         {
             try
             {
-                //this._personRule.IsValidEmpleadoGuardar(this._Empleados);
+                this._personRule.IsValidProductoGuardar(_productos);
 
                 _personRule.GuardarProducto(this._productos);
                 MessageBox.Show("Guardado");
@@ -80,7 +81,7 @@ namespace SystemBlast
                 txtNombre.Focus();
 
 
-                //this.List();
+                this.List();
             }
             catch (Exception ex)
             {
@@ -90,17 +91,89 @@ namespace SystemBlast
 
         private void btnActualizar_Click(object sender, EventArgs e)
         {
+            DialogResult R = MessageBox.Show("Seguro desea actualizar los datos ", "", MessageBoxButtons.YesNo);
 
+            if (R == DialogResult.Yes)
+            {
+                this._productos.idProducto = this.idProducto;
+                this._personRule.IsValidProductoGuardar(_productos);
+
+                this._personRule.ActualizarProducto(this._productos);
+                MessageBox.Show("Actualizado Correctamente");
+
+                txtNombre.Text = "";
+                txtCantidad.Text = "";
+                txtDescripcion.Text = "";
+                txtCantidadExistencia.Text = "";
+                txtNombre.Focus();
+                this.List();
+
+                btnGuardar.Enabled = false;
+            }
+
+            else
+            {
+                if (R == DialogResult.No)
+                {
+                    MessageBox.Show("Ah canselado el proceso exitosamente");
+                    txtNombre.Text = "";
+                    txtCantidad.Text = "";
+                    txtDescripcion.Text = "";
+                    txtCantidadExistencia.Text = "";
+                    txtNombre.Focus();
+                    this.List();
+
+                    btnGuardar.Enabled = true;
+                }
+            }
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
+            DialogResult R = MessageBox.Show("Seguro desea actualizar los datos ", "", MessageBoxButtons.YesNo);
 
+            if (R == DialogResult.Yes)
+            {
+                this._productos.idProducto = this.idProducto;
+
+                this._personRule.ActualizarProducto(this._productos);
+                MessageBox.Show("Actualizado Correctamente");
+
+                txtNombre.Text = "";
+                txtCantidad.Text = "";
+                txtDescripcion.Text = "";
+                txtCantidadExistencia.Text = "";
+                txtNombre.Focus();
+                this.List();
+            }
+
+            else
+            {
+                if (R == DialogResult.No)
+                {
+                    MessageBox.Show("Ah canselado el proceso exitosamente");
+                    txtNombre.Text = "";
+                    txtCantidad.Text = "";
+                    txtDescripcion.Text = "";
+                    txtCantidadExistencia.Text = "";
+                    txtNombre.Focus();
+                    this.List();
+
+                    btnGuardar.Enabled = true;
+                }
+            }
         }
 
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
+            txtNombre.Text = "";
+            txtCantidad.Text = "";
+            txtDescripcion.Text = "";
+            txtCantidadExistencia.Text = "";
+            txtNombre.Focus();
+            this.List();
 
+            btnGuardar.Enabled = true;
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
@@ -108,5 +181,109 @@ namespace SystemBlast
             this.Close();
         }
 
+        private void dtgLlenardatos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            this.llenarDatos();
+            btnGuardar.Enabled = false;
+        }
+
+        public void llenarDatos()
+        {
+            this.idProducto = Guid.Parse(dtgLlenardatos.CurrentRow.Cells[0].Value.ToString());
+            txtNombre.Text = dtgLlenardatos.CurrentRow.Cells[1].Value.ToString();
+            txtDescripcion.Text = dtgLlenardatos.CurrentRow.Cells[2].Value.ToString();
+            txtCantidad.Text = dtgLlenardatos.CurrentRow.Cells[3].Value.ToString();
+            txtCantidadExistencia.Text = dtgLlenardatos.CurrentRow.Cells[4].Value.ToString();
+
+        }
+
+        private void List()
+        {
+            try
+            {
+                dtgLlenardatos.DataSource = (from c in _personRule.ListaProducto(txtNombre.Text) select new { c.idProducto, c.nombre, c.descripcion, c.cantidadTotal, c.cantidadExistencia }).ToList();
+                dtgLlenardatos.Columns[0].Visible = false;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.ToString());
+            }
+        }
+
+        private void txtNombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsLetter(e.KeyChar))
+                e.Handled = false;
+            else if (Char.IsControl(e.KeyChar))
+                e.Handled = false;
+            else if (Char.IsSeparator(e.KeyChar))
+                e.Handled = false;
+            else if (Char.IsPunctuation(e.KeyChar))
+                e.Handled = false;
+            else e.Handled = true; ;
+
+
+            if (txtNombre.Text.Length == 15)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtCantidad_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsNumber(e.KeyChar))
+                e.Handled = false;
+            else if (Char.IsControl(e.KeyChar))
+                e.Handled = false;
+            else if (Char.IsSeparator(e.KeyChar))
+                e.Handled = false;
+            else if (Char.IsPunctuation(e.KeyChar))
+                e.Handled = false;
+            else e.Handled = true; ;
+
+
+            if (txtCantidad.Text.Length == 5)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtCantidadExistencia_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsNumber(e.KeyChar))
+                e.Handled = false;
+            else if (Char.IsControl(e.KeyChar))
+                e.Handled = false;
+            else if (Char.IsSeparator(e.KeyChar))
+                e.Handled = false;
+            else if (Char.IsPunctuation(e.KeyChar))
+                e.Handled = false;
+            else e.Handled = true; ;
+
+
+            if (txtCantidadExistencia.Text.Length == 5)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtDescripcion_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsLetter(e.KeyChar))
+                e.Handled = false;
+            else if (Char.IsControl(e.KeyChar))
+                e.Handled = false;
+            else if (Char.IsSeparator(e.KeyChar))
+                e.Handled = false;
+            else if (Char.IsPunctuation(e.KeyChar))
+                e.Handled = false;
+            else e.Handled = true; ;
+
+
+            if (txtDescripcion.Text.Length == 40)
+            {
+                e.Handled = true;
+            }
+        }
     }
 }

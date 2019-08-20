@@ -727,6 +727,37 @@ namespace CNegocio
 
         //Consulta Producto
 
+        public void IsValidProductoGuardar(clsProductoEntity producto)
+        {
+
+            if (producto == null)
+            {
+
+                throw new Exception("es necesario ingresar los datos de uncliente");
+
+            }
+
+            if (string.IsNullOrWhiteSpace(producto.nombre) || string.IsNullOrEmpty(producto.nombre))
+            {
+
+                throw new Exception(" es necesario ingresar nombre");
+
+            }
+            if (string.IsNullOrWhiteSpace(producto.cantidadTotal.ToString()) || string.IsNullOrEmpty(producto.cantidadTotal.ToString()))
+            {
+
+                throw new Exception("es necesario ingresar cantidad");
+
+            }
+            if (string.IsNullOrWhiteSpace(producto.descripcion) || string.IsNullOrEmpty(producto.descripcion))
+            {
+
+                throw new Exception("es necesario ingresar una descripcion");
+
+            }
+        }
+
+
         public Guid GuardarProducto(clsProductoEntity Producto)
         {
             using (var db = new BDModel())
@@ -770,7 +801,6 @@ namespace CNegocio
                     p.nombre = Producto.nombre;
                     p.descripcion = Producto.descripcion;
                     p.cantidadTotal = Producto.cantidadTotal;
-                    p.cantidadExistencia = Producto.cantidadExistencia;
 
                     db.Entry(p).State = System.Data.Entity.EntityState.Modified;
                     db.SaveChanges();
