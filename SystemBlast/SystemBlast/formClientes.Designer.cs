@@ -38,7 +38,6 @@
             this.btnGuardar = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnLimpiar = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnEliminar = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.label5 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dtgLlenardatos = new System.Windows.Forms.DataGridView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -70,13 +69,13 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
             this.panel1.Controls.Add(this.btnSalir);
             this.panel1.Controls.Add(this.groupBox3);
-            this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.groupBox2);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.groupBox1);
-            this.panel1.Location = new System.Drawing.Point(62, 51);
+            this.panel1.Location = new System.Drawing.Point(12, 12);
+            this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1039, 602);
+            this.panel1.Size = new System.Drawing.Size(1136, 616);
             this.panel1.TabIndex = 2;
             // 
             // btnSalir
@@ -84,7 +83,7 @@
             this.btnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
             this.btnSalir.Image = ((System.Drawing.Image)(resources.GetObject("btnSalir.Image")));
             this.btnSalir.ImageActive = null;
-            this.btnSalir.Location = new System.Drawing.Point(1002, 7);
+            this.btnSalir.Location = new System.Drawing.Point(1066, 5);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(30, 30);
             this.btnSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -99,9 +98,9 @@
             this.groupBox3.Controls.Add(this.btnGuardar);
             this.groupBox3.Controls.Add(this.btnLimpiar);
             this.groupBox3.Controls.Add(this.btnEliminar);
-            this.groupBox3.Location = new System.Drawing.Point(759, 477);
+            this.groupBox3.Location = new System.Drawing.Point(771, 510);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(243, 103);
+            this.groupBox3.Size = new System.Drawing.Size(325, 103);
             this.groupBox3.TabIndex = 134;
             this.groupBox3.TabStop = false;
             // 
@@ -117,17 +116,17 @@
             this.btnActualizar.ButtonText = "Actualizar";
             this.btnActualizar.CausesValidation = false;
             this.btnActualizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnActualizar.Font = new System.Drawing.Font("Californian FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnActualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnActualizar.ForeColor = System.Drawing.Color.Black;
             this.btnActualizar.IdleBorderThickness = 1;
             this.btnActualizar.IdleCornerRadius = 20;
             this.btnActualizar.IdleFillColor = System.Drawing.Color.Yellow;
             this.btnActualizar.IdleForecolor = System.Drawing.Color.Black;
             this.btnActualizar.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.btnActualizar.Location = new System.Drawing.Point(8, 53);
+            this.btnActualizar.Location = new System.Drawing.Point(48, 55);
             this.btnActualizar.Margin = new System.Windows.Forms.Padding(5);
             this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(102, 40);
+            this.btnActualizar.Size = new System.Drawing.Size(119, 40);
             this.btnActualizar.TabIndex = 132;
             this.btnActualizar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
@@ -143,17 +142,17 @@
             this.btnGuardar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnGuardar.BackgroundImage")));
             this.btnGuardar.ButtonText = "Guardar";
             this.btnGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnGuardar.Font = new System.Drawing.Font("Californian FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.ForeColor = System.Drawing.Color.Black;
             this.btnGuardar.IdleBorderThickness = 1;
             this.btnGuardar.IdleCornerRadius = 20;
             this.btnGuardar.IdleFillColor = System.Drawing.Color.Yellow;
             this.btnGuardar.IdleForecolor = System.Drawing.Color.Black;
             this.btnGuardar.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.btnGuardar.Location = new System.Drawing.Point(6, 11);
+            this.btnGuardar.Location = new System.Drawing.Point(46, 13);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(5);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(102, 40);
+            this.btnGuardar.Size = new System.Drawing.Size(119, 40);
             this.btnGuardar.TabIndex = 128;
             this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
@@ -169,17 +168,17 @@
             this.btnLimpiar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLimpiar.BackgroundImage")));
             this.btnLimpiar.ButtonText = "Limpiar Datos";
             this.btnLimpiar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLimpiar.Font = new System.Drawing.Font("Californian FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLimpiar.ForeColor = System.Drawing.Color.Black;
             this.btnLimpiar.IdleBorderThickness = 1;
             this.btnLimpiar.IdleCornerRadius = 20;
             this.btnLimpiar.IdleFillColor = System.Drawing.Color.Yellow;
             this.btnLimpiar.IdleForecolor = System.Drawing.Color.Black;
             this.btnLimpiar.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.btnLimpiar.Location = new System.Drawing.Point(135, 11);
+            this.btnLimpiar.Location = new System.Drawing.Point(177, 13);
             this.btnLimpiar.Margin = new System.Windows.Forms.Padding(5);
             this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(102, 40);
+            this.btnLimpiar.Size = new System.Drawing.Size(119, 40);
             this.btnLimpiar.TabIndex = 130;
             this.btnLimpiar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
@@ -195,41 +194,29 @@
             this.btnEliminar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEliminar.BackgroundImage")));
             this.btnEliminar.ButtonText = "Eliminar";
             this.btnEliminar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEliminar.Font = new System.Drawing.Font("Californian FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ForeColor = System.Drawing.Color.Black;
             this.btnEliminar.IdleBorderThickness = 1;
             this.btnEliminar.IdleCornerRadius = 20;
             this.btnEliminar.IdleFillColor = System.Drawing.Color.Yellow;
             this.btnEliminar.IdleForecolor = System.Drawing.Color.Black;
             this.btnEliminar.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.btnEliminar.Location = new System.Drawing.Point(135, 53);
+            this.btnEliminar.Location = new System.Drawing.Point(177, 55);
             this.btnEliminar.Margin = new System.Windows.Forms.Padding(5);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(102, 40);
+            this.btnEliminar.Size = new System.Drawing.Size(119, 40);
             this.btnEliminar.TabIndex = 129;
             this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(794, 285);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(188, 189);
-            this.label5.TabIndex = 133;
-            this.label5.Text = resources.GetString("label5.Text");
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.dtgLlenardatos);
-            this.groupBox2.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.Yellow;
-            this.groupBox2.Location = new System.Drawing.Point(35, 310);
+            this.groupBox2.Location = new System.Drawing.Point(35, 309);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(703, 270);
+            this.groupBox2.Size = new System.Drawing.Size(703, 304);
             this.groupBox2.TabIndex = 136;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Listado de Clientes";
@@ -247,7 +234,7 @@
             this.dtgLlenardatos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Yellow;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -257,7 +244,7 @@
             this.dtgLlenardatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(49)))), ((int)(((byte)(70)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -272,16 +259,16 @@
             this.dtgLlenardatos.RowHeadersVisible = false;
             this.dtgLlenardatos.RowHeadersWidth = 100;
             this.dtgLlenardatos.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dtgLlenardatos.Size = new System.Drawing.Size(673, 226);
+            this.dtgLlenardatos.Size = new System.Drawing.Size(673, 251);
             this.dtgLlenardatos.TabIndex = 137;
             this.dtgLlenardatos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgLlenardatos_CellContentClick);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(759, 43);
+            this.pictureBox1.Location = new System.Drawing.Point(771, 41);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(243, 235);
+            this.pictureBox1.Size = new System.Drawing.Size(325, 481);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 132;
             this.pictureBox1.TabStop = false;
@@ -304,13 +291,13 @@
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.Yellow;
             this.groupBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.groupBox1.Location = new System.Drawing.Point(35, 30);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.groupBox1.Size = new System.Drawing.Size(703, 248);
+            this.groupBox1.Size = new System.Drawing.Size(703, 262);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Registro de Clientes";
@@ -348,7 +335,7 @@
             // txtCedula
             // 
             this.txtCedula.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCedula.Font = new System.Drawing.Font("Californian FB", 12F);
+            this.txtCedula.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCedula.ForeColor = System.Drawing.Color.White;
             this.txtCedula.HintForeColor = System.Drawing.Color.White;
             this.txtCedula.HintText = "";
@@ -370,19 +357,19 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Californian FB", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Yellow;
             this.label2.Location = new System.Drawing.Point(9, 154);
             this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 22);
+            this.label2.Size = new System.Drawing.Size(76, 24);
             this.label2.TabIndex = 156;
             this.label2.Text = "Cedula";
             // 
             // txtTelefono
             // 
             this.txtTelefono.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTelefono.Font = new System.Drawing.Font("Californian FB", 12F);
+            this.txtTelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTelefono.ForeColor = System.Drawing.Color.White;
             this.txtTelefono.HintForeColor = System.Drawing.Color.White;
             this.txtTelefono.HintText = "";
@@ -391,10 +378,10 @@
             this.txtTelefono.LineIdleColor = System.Drawing.Color.Maroon;
             this.txtTelefono.LineMouseHoverColor = System.Drawing.Color.Yellow;
             this.txtTelefono.LineThickness = 3;
-            this.txtTelefono.Location = new System.Drawing.Point(579, 176);
+            this.txtTelefono.Location = new System.Drawing.Point(563, 176);
             this.txtTelefono.Margin = new System.Windows.Forms.Padding(4);
             this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(107, 33);
+            this.txtTelefono.Size = new System.Drawing.Size(123, 33);
             this.txtTelefono.TabIndex = 155;
             this.txtTelefono.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtTelefono.OnValueChanged += new System.EventHandler(this.txtTelefono_OnValueChanged);
@@ -403,19 +390,19 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Californian FB", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Yellow;
-            this.label1.Location = new System.Drawing.Point(575, 154);
+            this.label1.Location = new System.Drawing.Point(559, 154);
             this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 22);
+            this.label1.Size = new System.Drawing.Size(93, 24);
             this.label1.TabIndex = 154;
             this.label1.Text = "Telefono";
             // 
             // txtEdad
             // 
             this.txtEdad.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtEdad.Font = new System.Drawing.Font("Californian FB", 12F);
+            this.txtEdad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEdad.ForeColor = System.Drawing.Color.White;
             this.txtEdad.HintForeColor = System.Drawing.Color.White;
             this.txtEdad.HintText = "";
@@ -436,7 +423,7 @@
             // txtApellidos
             // 
             this.txtApellidos.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtApellidos.Font = new System.Drawing.Font("Californian FB", 12F);
+            this.txtApellidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtApellidos.ForeColor = System.Drawing.Color.White;
             this.txtApellidos.HintForeColor = System.Drawing.Color.White;
             this.txtApellidos.HintText = "";
@@ -458,7 +445,7 @@
             // txtNombres
             // 
             this.txtNombres.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtNombres.Font = new System.Drawing.Font("Californian FB", 12F);
+            this.txtNombres.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombres.ForeColor = System.Drawing.Color.White;
             this.txtNombres.HintForeColor = System.Drawing.Color.White;
             this.txtNombres.HintText = "";
@@ -480,36 +467,36 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Californian FB", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Yellow;
             this.label10.Location = new System.Drawing.Point(9, 35);
             this.label10.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(74, 22);
+            this.label10.Size = new System.Drawing.Size(85, 24);
             this.label10.TabIndex = 149;
             this.label10.Text = "Nombre";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Californian FB", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Yellow;
             this.label3.Location = new System.Drawing.Point(387, 154);
             this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(50, 22);
+            this.label3.Size = new System.Drawing.Size(59, 24);
             this.label3.TabIndex = 145;
             this.label3.Text = "Edad";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Californian FB", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Yellow;
             this.label7.Location = new System.Drawing.Point(388, 35);
             this.label7.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(73, 22);
+            this.label7.Size = new System.Drawing.Size(87, 24);
             this.label7.TabIndex = 144;
             this.label7.Text = "Apellido";
             // 
@@ -517,7 +504,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Silver;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
             this.ClientSize = new System.Drawing.Size(1160, 640);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -526,7 +513,6 @@
             this.Text = "formClientes";
             this.Load += new System.EventHandler(this.formClientes_Load);
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
@@ -547,7 +533,6 @@
         private Bunifu.Framework.UI.BunifuThinButton2 btnGuardar;
         private Bunifu.Framework.UI.BunifuThinButton2 btnLimpiar;
         private Bunifu.Framework.UI.BunifuThinButton2 btnEliminar;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.DataGridView dtgLlenardatos;
         private System.Windows.Forms.PictureBox pictureBox1;

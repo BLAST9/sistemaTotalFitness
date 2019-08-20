@@ -39,7 +39,6 @@
             this.btnEntrar = new System.Windows.Forms.Button();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.imgLogo = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgLogo)).BeginInit();
@@ -69,7 +68,6 @@
             this.panel1.Controls.Add(this.btnEntrar);
             this.panel1.Controls.Add(this.txtUsuario);
             this.panel1.Controls.Add(this.imgLogo);
-            this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(460, 180);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(450, 350);
@@ -82,7 +80,7 @@
             this.checkBoxContraseña.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Underline);
             this.checkBoxContraseña.ForeColor = System.Drawing.Color.White;
             this.checkBoxContraseña.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBoxContraseña.Location = new System.Drawing.Point(133, 289);
+            this.checkBoxContraseña.Location = new System.Drawing.Point(133, 272);
             this.checkBoxContraseña.Name = "checkBoxContraseña";
             this.checkBoxContraseña.Size = new System.Drawing.Size(184, 22);
             this.checkBoxContraseña.TabIndex = 24;
@@ -94,7 +92,7 @@
             // 
             this.btnSalir.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Bold);
             this.btnSalir.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnSalir.Location = new System.Drawing.Point(244, 319);
+            this.btnSalir.Location = new System.Drawing.Point(244, 309);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(73, 23);
             this.btnSalir.TabIndex = 23;
@@ -104,8 +102,8 @@
             // 
             // txtContraseña
             // 
-            this.txtContraseña.Font = new System.Drawing.Font("Baskerville Old Face", 14.25F);
-            this.txtContraseña.Location = new System.Drawing.Point(211, 252);
+            this.txtContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtContraseña.Location = new System.Drawing.Point(211, 224);
             this.txtContraseña.MaxLength = 8;
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.Size = new System.Drawing.Size(177, 29);
@@ -117,12 +115,12 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Imprint MT Shadow", 18F, System.Drawing.FontStyle.Bold);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label3.Location = new System.Drawing.Point(64, 215);
+            this.label3.Location = new System.Drawing.Point(72, 178);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(101, 28);
+            this.label3.Size = new System.Drawing.Size(93, 25);
             this.label3.TabIndex = 18;
             this.label3.Text = "Usuario";
             // 
@@ -130,12 +128,12 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Imprint MT Shadow", 18F, System.Drawing.FontStyle.Bold);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label4.Location = new System.Drawing.Point(64, 253);
+            this.label4.Location = new System.Drawing.Point(72, 228);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(138, 28);
+            this.label4.Size = new System.Drawing.Size(133, 25);
             this.label4.TabIndex = 19;
             this.label4.Text = "Contraseña";
             // 
@@ -143,7 +141,7 @@
             // 
             this.btnEntrar.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Bold);
             this.btnEntrar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnEntrar.Location = new System.Drawing.Point(133, 319);
+            this.btnEntrar.Location = new System.Drawing.Point(133, 309);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(89, 23);
             this.btnEntrar.TabIndex = 20;
@@ -153,8 +151,8 @@
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Font = new System.Drawing.Font("Baskerville Old Face", 14.25F);
-            this.txtUsuario.Location = new System.Drawing.Point(211, 217);
+            this.txtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsuario.Location = new System.Drawing.Point(211, 174);
             this.txtUsuario.MaxLength = 12;
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(177, 29);
@@ -162,27 +160,14 @@
             // 
             // imgLogo
             // 
-            this.imgLogo.Image = global::SystemBlast.Properties.Resources._1;
+            this.imgLogo.Image = ((System.Drawing.Image)(resources.GetObject("imgLogo.Image")));
             this.imgLogo.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.imgLogo.Location = new System.Drawing.Point(144, 52);
+            this.imgLogo.Location = new System.Drawing.Point(35, 33);
             this.imgLogo.Name = "imgLogo";
-            this.imgLogo.Size = new System.Drawing.Size(151, 146);
+            this.imgLogo.Size = new System.Drawing.Size(388, 100);
             this.imgLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imgLogo.TabIndex = 17;
             this.imgLogo.TabStop = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Bauhaus 93", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Yellow;
-            this.label2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label2.Location = new System.Drawing.Point(103, 3);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(233, 42);
-            this.label2.TabIndex = 16;
-            this.label2.Text = "Total Fitness";
             // 
             // formPrincipal
             // 
@@ -217,7 +202,6 @@
         private System.Windows.Forms.Button btnEntrar;
         private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.PictureBox imgLogo;
-        private System.Windows.Forms.Label label2;
     }
 }
 

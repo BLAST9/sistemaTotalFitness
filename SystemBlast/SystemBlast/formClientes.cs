@@ -154,7 +154,7 @@ namespace SystemBlast
 
             else
             {
-                if (R == DialogResult.Yes)
+                if (R == DialogResult.No)
                 {
                     MessageBox.Show("Ah canselado el proceso exitosamente");
                     txtCedula.Text = "";
@@ -172,6 +172,8 @@ namespace SystemBlast
                     txtCedula.LineIdleColor = Color.Maroon;
                     txtNombres.LineIdleColor = Color.Maroon;
                     txtApellidos.LineIdleColor = Color.Maroon;
+
+                    btnGuardar.Enabled = true;
                 }
             }
         }
@@ -211,7 +213,7 @@ namespace SystemBlast
 
             else
             {
-                if (R == DialogResult.Yes)
+                if (R == DialogResult.No)
                 {
                     MessageBox.Show("Ah canselado el proceso exitosamente");
                     txtCedula.Text = "";
@@ -229,6 +231,8 @@ namespace SystemBlast
                     txtCedula.LineIdleColor = Color.Maroon;
                     txtNombres.LineIdleColor = Color.Maroon;
                     txtApellidos.LineIdleColor = Color.Maroon;
+
+                    btnGuardar.Enabled = true;
                 }
             }
         }

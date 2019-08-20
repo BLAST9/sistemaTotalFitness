@@ -28,36 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formHorarioEmpleado));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.dtgLlenardatos = new System.Windows.Forms.DataGridView();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.bunifuDatepicker1 = new Bunifu.Framework.UI.BunifuDatepicker();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.btnSalir = new Bunifu.Framework.UI.BunifuImageButton();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.btnActualizar = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnGuardar = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnLimpiar = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnEliminar = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.dtgLlenardatos = new System.Windows.Forms.DataGridView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.bunifuDatepicker1 = new Bunifu.Framework.UI.BunifuDatepicker();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgLlenardatos)).BeginInit();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -65,7 +64,6 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
             this.panel1.Controls.Add(this.btnSalir);
             this.panel1.Controls.Add(this.groupBox3);
-            this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.groupBox2);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.groupBox1);
@@ -74,29 +72,131 @@
             this.panel1.Size = new System.Drawing.Size(1039, 602);
             this.panel1.TabIndex = 3;
             // 
+            // btnSalir
+            // 
+            this.btnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.btnSalir.Image = ((System.Drawing.Image)(resources.GetObject("btnSalir.Image")));
+            this.btnSalir.ImageActive = null;
+            this.btnSalir.Location = new System.Drawing.Point(1002, 7);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(30, 30);
+            this.btnSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnSalir.TabIndex = 131;
+            this.btnSalir.TabStop = false;
+            this.btnSalir.Zoom = 10;
+            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.btnActualizar);
             this.groupBox3.Controls.Add(this.btnGuardar);
             this.groupBox3.Controls.Add(this.btnLimpiar);
             this.groupBox3.Controls.Add(this.btnEliminar);
-            this.groupBox3.Location = new System.Drawing.Point(759, 477);
+            this.groupBox3.Location = new System.Drawing.Point(751, 477);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(243, 103);
+            this.groupBox3.Size = new System.Drawing.Size(273, 103);
             this.groupBox3.TabIndex = 134;
             this.groupBox3.TabStop = false;
             // 
-            // label5
+            // btnActualizar
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(794, 285);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(188, 189);
-            this.label5.TabIndex = 133;
-            this.label5.Text = resources.GetString("label5.Text");
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnActualizar.ActiveBorderThickness = 1;
+            this.btnActualizar.ActiveCornerRadius = 20;
+            this.btnActualizar.ActiveFillColor = System.Drawing.Color.LawnGreen;
+            this.btnActualizar.ActiveForecolor = System.Drawing.Color.Black;
+            this.btnActualizar.ActiveLineColor = System.Drawing.Color.LawnGreen;
+            this.btnActualizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.btnActualizar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnActualizar.BackgroundImage")));
+            this.btnActualizar.ButtonText = "Actualizar";
+            this.btnActualizar.CausesValidation = false;
+            this.btnActualizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnActualizar.Font = new System.Drawing.Font("Californian FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnActualizar.ForeColor = System.Drawing.Color.Black;
+            this.btnActualizar.IdleBorderThickness = 1;
+            this.btnActualizar.IdleCornerRadius = 20;
+            this.btnActualizar.IdleFillColor = System.Drawing.Color.Yellow;
+            this.btnActualizar.IdleForecolor = System.Drawing.Color.Black;
+            this.btnActualizar.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnActualizar.Location = new System.Drawing.Point(21, 55);
+            this.btnActualizar.Margin = new System.Windows.Forms.Padding(5);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.Size = new System.Drawing.Size(102, 40);
+            this.btnActualizar.TabIndex = 132;
+            this.btnActualizar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.ActiveBorderThickness = 1;
+            this.btnGuardar.ActiveCornerRadius = 20;
+            this.btnGuardar.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnGuardar.ActiveForecolor = System.Drawing.Color.Black;
+            this.btnGuardar.ActiveLineColor = System.Drawing.Color.Black;
+            this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.btnGuardar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnGuardar.BackgroundImage")));
+            this.btnGuardar.ButtonText = "Guardar";
+            this.btnGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGuardar.Font = new System.Drawing.Font("Californian FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.ForeColor = System.Drawing.Color.Black;
+            this.btnGuardar.IdleBorderThickness = 1;
+            this.btnGuardar.IdleCornerRadius = 20;
+            this.btnGuardar.IdleFillColor = System.Drawing.Color.Yellow;
+            this.btnGuardar.IdleForecolor = System.Drawing.Color.Black;
+            this.btnGuardar.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnGuardar.Location = new System.Drawing.Point(19, 13);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(5);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(102, 40);
+            this.btnGuardar.TabIndex = 128;
+            this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.ActiveBorderThickness = 1;
+            this.btnLimpiar.ActiveCornerRadius = 20;
+            this.btnLimpiar.ActiveFillColor = System.Drawing.Color.LawnGreen;
+            this.btnLimpiar.ActiveForecolor = System.Drawing.Color.Black;
+            this.btnLimpiar.ActiveLineColor = System.Drawing.Color.SeaShell;
+            this.btnLimpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.btnLimpiar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLimpiar.BackgroundImage")));
+            this.btnLimpiar.ButtonText = "Limpiar Datos";
+            this.btnLimpiar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLimpiar.Font = new System.Drawing.Font("Californian FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpiar.ForeColor = System.Drawing.Color.Black;
+            this.btnLimpiar.IdleBorderThickness = 1;
+            this.btnLimpiar.IdleCornerRadius = 20;
+            this.btnLimpiar.IdleFillColor = System.Drawing.Color.Yellow;
+            this.btnLimpiar.IdleForecolor = System.Drawing.Color.Black;
+            this.btnLimpiar.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnLimpiar.Location = new System.Drawing.Point(148, 13);
+            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(5);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(102, 40);
+            this.btnLimpiar.TabIndex = 130;
+            this.btnLimpiar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.ActiveBorderThickness = 1;
+            this.btnEliminar.ActiveCornerRadius = 20;
+            this.btnEliminar.ActiveFillColor = System.Drawing.Color.LawnGreen;
+            this.btnEliminar.ActiveForecolor = System.Drawing.Color.Black;
+            this.btnEliminar.ActiveLineColor = System.Drawing.Color.LawnGreen;
+            this.btnEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.btnEliminar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEliminar.BackgroundImage")));
+            this.btnEliminar.ButtonText = "Eliminar";
+            this.btnEliminar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEliminar.Font = new System.Drawing.Font("Californian FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.ForeColor = System.Drawing.Color.Black;
+            this.btnEliminar.IdleBorderThickness = 1;
+            this.btnEliminar.IdleCornerRadius = 20;
+            this.btnEliminar.IdleFillColor = System.Drawing.Color.Yellow;
+            this.btnEliminar.IdleForecolor = System.Drawing.Color.Black;
+            this.btnEliminar.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnEliminar.Location = new System.Drawing.Point(148, 55);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(5);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(102, 40);
+            this.btnEliminar.TabIndex = 129;
+            this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // groupBox2
             // 
@@ -121,24 +221,24 @@
             this.dtgLlenardatos.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
             this.dtgLlenardatos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtgLlenardatos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Yellow;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgLlenardatos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Yellow;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgLlenardatos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dtgLlenardatos.ColumnHeadersHeight = 30;
             this.dtgLlenardatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(49)))), ((int)(((byte)(70)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Yellow;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgLlenardatos.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(49)))), ((int)(((byte)(70)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Yellow;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgLlenardatos.DefaultCellStyle = dataGridViewCellStyle6;
             this.dtgLlenardatos.EnableHeadersVisualStyles = false;
             this.dtgLlenardatos.GridColor = System.Drawing.Color.White;
             this.dtgLlenardatos.Location = new System.Drawing.Point(13, 36);
@@ -151,6 +251,16 @@
             this.dtgLlenardatos.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.dtgLlenardatos.Size = new System.Drawing.Size(673, 226);
             this.dtgLlenardatos.TabIndex = 137;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(751, 43);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(273, 428);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 132;
+            this.pictureBox1.TabStop = false;
             // 
             // groupBox1
             // 
@@ -175,6 +285,66 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Registro de Clientes";
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.Font = new System.Drawing.Font("Californian FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Items.AddRange(new object[] {
+            "12: 00 PM",
+            "10: 00 PM"});
+            this.comboBox3.Location = new System.Drawing.Point(392, 188);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(218, 27);
+            this.comboBox3.TabIndex = 161;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.Font = new System.Drawing.Font("Californian FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "5:00 AM",
+            "1:00 PM"});
+            this.comboBox2.Location = new System.Drawing.Point(392, 79);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(218, 27);
+            this.comboBox2.TabIndex = 160;
+            // 
+            // bunifuDatepicker1
+            // 
+            this.bunifuDatepicker1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.bunifuDatepicker1.BorderRadius = 0;
+            this.bunifuDatepicker1.Font = new System.Drawing.Font("Californian FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuDatepicker1.ForeColor = System.Drawing.Color.White;
+            this.bunifuDatepicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.bunifuDatepicker1.FormatCustom = null;
+            this.bunifuDatepicker1.Location = new System.Drawing.Point(13, 179);
+            this.bunifuDatepicker1.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
+            this.bunifuDatepicker1.Name = "bunifuDatepicker1";
+            this.bunifuDatepicker1.Size = new System.Drawing.Size(303, 36);
+            this.bunifuDatepicker1.TabIndex = 159;
+            this.bunifuDatepicker1.Value = new System.DateTime(2019, 8, 18, 20, 21, 31, 743);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Font = new System.Drawing.Font("Californian FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(13, 79);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(303, 27);
+            this.comboBox1.TabIndex = 158;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Californian FB", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Yellow;
+            this.label1.Location = new System.Drawing.Point(388, 151);
+            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(121, 22);
+            this.label1.TabIndex = 157;
+            this.label1.Text = "Hora de Salida";
             // 
             // label2
             // 
@@ -212,190 +382,6 @@
             this.label7.TabIndex = 144;
             this.label7.Text = "Hora de Entrada";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Californian FB", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Yellow;
-            this.label1.Location = new System.Drawing.Point(388, 151);
-            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(121, 22);
-            this.label1.TabIndex = 157;
-            this.label1.Text = "Hora de Salida";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Font = new System.Drawing.Font("Californian FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(13, 79);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(303, 27);
-            this.comboBox1.TabIndex = 158;
-            // 
-            // bunifuDatepicker1
-            // 
-            this.bunifuDatepicker1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.bunifuDatepicker1.BorderRadius = 0;
-            this.bunifuDatepicker1.Font = new System.Drawing.Font("Californian FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuDatepicker1.ForeColor = System.Drawing.Color.White;
-            this.bunifuDatepicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.bunifuDatepicker1.FormatCustom = null;
-            this.bunifuDatepicker1.Location = new System.Drawing.Point(13, 179);
-            this.bunifuDatepicker1.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
-            this.bunifuDatepicker1.Name = "bunifuDatepicker1";
-            this.bunifuDatepicker1.Size = new System.Drawing.Size(303, 36);
-            this.bunifuDatepicker1.TabIndex = 159;
-            this.bunifuDatepicker1.Value = new System.DateTime(2019, 8, 18, 20, 21, 31, 743);
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.Font = new System.Drawing.Font("Californian FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "5:00 AM",
-            "1:00 PM"});
-            this.comboBox2.Location = new System.Drawing.Point(392, 79);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(218, 27);
-            this.comboBox2.TabIndex = 160;
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.Font = new System.Drawing.Font("Californian FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
-            "12: 00 PM",
-            "10: 00 PM"});
-            this.comboBox3.Location = new System.Drawing.Point(392, 188);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(218, 27);
-            this.comboBox3.TabIndex = 161;
-            // 
-            // btnSalir
-            // 
-            this.btnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.btnSalir.Image = ((System.Drawing.Image)(resources.GetObject("btnSalir.Image")));
-            this.btnSalir.ImageActive = null;
-            this.btnSalir.Location = new System.Drawing.Point(1002, 7);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(30, 30);
-            this.btnSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnSalir.TabIndex = 131;
-            this.btnSalir.TabStop = false;
-            this.btnSalir.Zoom = 10;
-            // 
-            // btnActualizar
-            // 
-            this.btnActualizar.ActiveBorderThickness = 1;
-            this.btnActualizar.ActiveCornerRadius = 20;
-            this.btnActualizar.ActiveFillColor = System.Drawing.Color.LawnGreen;
-            this.btnActualizar.ActiveForecolor = System.Drawing.Color.Black;
-            this.btnActualizar.ActiveLineColor = System.Drawing.Color.LawnGreen;
-            this.btnActualizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.btnActualizar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnActualizar.BackgroundImage")));
-            this.btnActualizar.ButtonText = "Actualizar";
-            this.btnActualizar.CausesValidation = false;
-            this.btnActualizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnActualizar.Font = new System.Drawing.Font("Californian FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnActualizar.ForeColor = System.Drawing.Color.Black;
-            this.btnActualizar.IdleBorderThickness = 1;
-            this.btnActualizar.IdleCornerRadius = 20;
-            this.btnActualizar.IdleFillColor = System.Drawing.Color.Yellow;
-            this.btnActualizar.IdleForecolor = System.Drawing.Color.Black;
-            this.btnActualizar.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.btnActualizar.Location = new System.Drawing.Point(8, 53);
-            this.btnActualizar.Margin = new System.Windows.Forms.Padding(5);
-            this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(102, 40);
-            this.btnActualizar.TabIndex = 132;
-            this.btnActualizar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnGuardar
-            // 
-            this.btnGuardar.ActiveBorderThickness = 1;
-            this.btnGuardar.ActiveCornerRadius = 20;
-            this.btnGuardar.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnGuardar.ActiveForecolor = System.Drawing.Color.Black;
-            this.btnGuardar.ActiveLineColor = System.Drawing.Color.Black;
-            this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.btnGuardar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnGuardar.BackgroundImage")));
-            this.btnGuardar.ButtonText = "Guardar";
-            this.btnGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnGuardar.Font = new System.Drawing.Font("Californian FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.ForeColor = System.Drawing.Color.Black;
-            this.btnGuardar.IdleBorderThickness = 1;
-            this.btnGuardar.IdleCornerRadius = 20;
-            this.btnGuardar.IdleFillColor = System.Drawing.Color.Yellow;
-            this.btnGuardar.IdleForecolor = System.Drawing.Color.Black;
-            this.btnGuardar.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.btnGuardar.Location = new System.Drawing.Point(6, 11);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(5);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(102, 40);
-            this.btnGuardar.TabIndex = 128;
-            this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnLimpiar
-            // 
-            this.btnLimpiar.ActiveBorderThickness = 1;
-            this.btnLimpiar.ActiveCornerRadius = 20;
-            this.btnLimpiar.ActiveFillColor = System.Drawing.Color.LawnGreen;
-            this.btnLimpiar.ActiveForecolor = System.Drawing.Color.Black;
-            this.btnLimpiar.ActiveLineColor = System.Drawing.Color.SeaShell;
-            this.btnLimpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.btnLimpiar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLimpiar.BackgroundImage")));
-            this.btnLimpiar.ButtonText = "Limpiar Datos";
-            this.btnLimpiar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLimpiar.Font = new System.Drawing.Font("Californian FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiar.ForeColor = System.Drawing.Color.Black;
-            this.btnLimpiar.IdleBorderThickness = 1;
-            this.btnLimpiar.IdleCornerRadius = 20;
-            this.btnLimpiar.IdleFillColor = System.Drawing.Color.Yellow;
-            this.btnLimpiar.IdleForecolor = System.Drawing.Color.Black;
-            this.btnLimpiar.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.btnLimpiar.Location = new System.Drawing.Point(135, 11);
-            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(5);
-            this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(102, 40);
-            this.btnLimpiar.TabIndex = 130;
-            this.btnLimpiar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnEliminar
-            // 
-            this.btnEliminar.ActiveBorderThickness = 1;
-            this.btnEliminar.ActiveCornerRadius = 20;
-            this.btnEliminar.ActiveFillColor = System.Drawing.Color.LawnGreen;
-            this.btnEliminar.ActiveForecolor = System.Drawing.Color.Black;
-            this.btnEliminar.ActiveLineColor = System.Drawing.Color.LawnGreen;
-            this.btnEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.btnEliminar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEliminar.BackgroundImage")));
-            this.btnEliminar.ButtonText = "Eliminar";
-            this.btnEliminar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEliminar.Font = new System.Drawing.Font("Californian FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.ForeColor = System.Drawing.Color.Black;
-            this.btnEliminar.IdleBorderThickness = 1;
-            this.btnEliminar.IdleCornerRadius = 20;
-            this.btnEliminar.IdleFillColor = System.Drawing.Color.Yellow;
-            this.btnEliminar.IdleForecolor = System.Drawing.Color.Black;
-            this.btnEliminar.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.btnEliminar.Location = new System.Drawing.Point(135, 53);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(5);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(102, 40);
-            this.btnEliminar.TabIndex = 129;
-            this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(759, 43);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(243, 235);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 132;
-            this.pictureBox1.TabStop = false;
-            // 
             // formHorarioEmpleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -409,14 +395,13 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "formHorarioEmpleado";
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtgLlenardatos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -430,7 +415,6 @@
         private Bunifu.Framework.UI.BunifuThinButton2 btnGuardar;
         private Bunifu.Framework.UI.BunifuThinButton2 btnLimpiar;
         private Bunifu.Framework.UI.BunifuThinButton2 btnEliminar;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.DataGridView dtgLlenardatos;
         private System.Windows.Forms.PictureBox pictureBox1;

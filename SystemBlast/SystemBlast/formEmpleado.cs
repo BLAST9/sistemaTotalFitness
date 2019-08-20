@@ -69,11 +69,13 @@ namespace SystemBlast
         private void txtNombres_OnValueChanged(object sender, EventArgs e)
         {
             _Empleados.nombres = txtNombres.Text;
+            this.List();
         }
 
         private void txtApellidos_OnValueChanged(object sender, EventArgs e)
         {
             _Empleados.apellidos = txtApellidos.Text;
+            this.List();
         }
 
         private void txtEdad_OnValueChanged(object sender, EventArgs e)
@@ -89,11 +91,13 @@ namespace SystemBlast
         private void cbCargo_SelectedIndexChanged(object sender, EventArgs e)
         {
             _Empleados.cargo = cbCargo.Text;
+            this.List();
         }
 
         private void cbTurno_SelectedIndexChanged(object sender, EventArgs e)
         {
             _Empleados.turno = cbTurno.Text;
+            this.List();
         }
 
         private void txtUsuario_OnValueChanged(object sender, EventArgs e)
@@ -174,7 +178,7 @@ namespace SystemBlast
 
             else
             {
-                if (R == DialogResult.Yes)
+                if (R == DialogResult.No)
                 {
                     MessageBox.Show("Ah canselado el proceso exitosamente");
                     txtCedula.Text = "";
@@ -188,6 +192,7 @@ namespace SystemBlast
                     txtUsuario.Text = "";
 
                     txtNombres.Focus();
+                    btnGuardar.Enabled = true;
 
                 }
             }
@@ -219,7 +224,7 @@ namespace SystemBlast
                 txtNombres.Focus();
 
                 this.List();
-                btnGuardar.Enabled = false;
+                btnGuardar.Enabled = true;
                 txtCedula.Enabled = true;
                 Temp = "Guardar";
 
@@ -227,7 +232,7 @@ namespace SystemBlast
 
             else
             {
-                if (R == DialogResult.Yes)
+                if (R == DialogResult.No)
                 {
                     MessageBox.Show("Ah canselado el proceso exitosamente");
                     txtCedula.Text = "";
@@ -241,6 +246,7 @@ namespace SystemBlast
                     txtUsuario.Text = "";
 
                     txtNombres.Focus();
+                    btnGuardar.Enabled = true;
 
                 }
             }

@@ -73,6 +73,16 @@ namespace SystemBlast.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap baseline_person_white_18dp {
+            get {
+                object obj = ResourceManager.GetObject("baseline_person_white_18dp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap el_espiritu_santo_y_los_siete_pecados_capitales_papel_pintado_2560x1600_1817_7 {
             get {
                 object obj = ResourceManager.GetObject("el-espiritu-santo-y-los-siete-pecados-capitales-papel-pintado-2560x1600-1817_7", resourceCulture);

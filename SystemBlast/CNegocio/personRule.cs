@@ -183,23 +183,6 @@ namespace CNegocio
 
         }
 
-        public void ActualizarClientesHorarios(clsClienteHorarioEntity ClientesH)
-        {
-            using (var db = new BDModel())
-            {
-                var p = db.clientesHorariosEntities.Where(c => c.idClienteHorario == ClientesH.idClienteHorario).FirstOrDefault(); 
-
-                if (p != null)
-                {
-                    p.idHorarioCliente = ClientesH.idClienteHorario; 
-                    p.idCliente = ClientesH.idCliente;
-
-                    db.Entry(p).State = System.Data.Entity.EntityState.Modified; 
-                    db.SaveChanges();
-                }
-            }
-        }
-
         public void EliminarClientesHorario(clsClienteHorarioEntity ClientesH)
         {
             using (var db = new BDModel())
@@ -304,13 +287,13 @@ namespace CNegocio
             }
 
         }
-        public List<clsEmpleadoEntity> ListaEmpleados(string Nombres, string Apellidos, string Cargo, string Turno)
+        public List<clsEmpleadoEntity> ListaEmpleados(string Nombres, string Apellidos, string cargos, string turno)
         {
             using (var db = new BDModel())
             {
               
                 var Empleados = (from c in db.empleadosEntities 
-                                where (c.nombres).StartsWith(Nombres) && (c.apellidos).StartsWith(Apellidos) && (c.cargo).StartsWith(Cargo) && (c.turno).StartsWith(Turno)
+                                where (c.nombres).StartsWith(Nombres) && (c.apellidos).StartsWith(Apellidos) && (c.cargo).StartsWith(cargos) && (c.turno).StartsWith(turno)
                                  select c).ToList(); 
 
                 return Empleados;
@@ -503,14 +486,28 @@ namespace CNegocio
             }
 
         }
-        public List<clsHorarioClienteEntity > ListaHorariosClientes(DateTime Fecha)
+        public class horarioCliente
+        {
+            public Guid idHorarioCliente { get; set; }
+            public DateTime fecha { get; set; }
+            public string horaEntrada { get; set; }
+            public string horaSalida { get; set; }
+            public string nombres { get; set; }
+
+            public string apellidos { get; set; }
+        }
+
+        public List<horarioCliente > ListaHorariosClientes()
         {
             using (var db = new BDModel())
             {
 
-                var Horariocliente = (from c in db.horariosClientesEntities
-                               where (c.fecha == Fecha)
-                               select c).ToList();
+                var Horariocliente = (from c in db.clientesEntities join x in db.clientesHorariosEntities
+                                      on c.idCliente equals x.idCliente join g in db.horariosClientesEntities 
+                                      on x.idHorarioCliente equals g.idHorarioCliente
+                                      select new horarioCliente { idHorarioCliente = g.idHorarioCliente, fecha = g.fecha,
+                                                                  horaEntrada = g.horarioEntrada, horaSalida = g.horarioSalida,
+                                                                  nombres = c.nombres, apellidos = c.apellidos }).ToList();
 
                 return Horariocliente;
 
