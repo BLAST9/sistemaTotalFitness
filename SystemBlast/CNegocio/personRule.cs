@@ -8,13 +8,13 @@ using DataModel;
 namespace CNegocio
 {
     public class personRule
-    {
+    {// Metodo Validacion de usuario, recibe 2 parametros
         public clsEmpleadoEntity ValidacionUsuario(string Usuario, string Contraseña)
-        {
+        { //Creamos una instancia de BD model
             using (var db = new BDModel())
-            {
+            {//Creamos una variable y accedemos a la tabla de empleados
                 var x = db.empleadosEntities.Where(c => c.nombreUsuario.Equals(Usuario) && c.contraseña.Equals(Contraseña)).FirstOrDefault();
-
+                                                   //Expresion LANDA para acceder a datos de la tabla empleados.            Encuentra o recorre los datos
                 return x;
             }
         }
@@ -514,9 +514,9 @@ namespace CNegocio
 
                 var Horariocliente = (from c in db.clientesEntities
                                       join x in db.clientesHorariosEntities
-        on c.idCliente equals x.idCliente
+                                      on c.idCliente equals x.idCliente
                                       join g in db.horariosClientesEntities
-    on x.idHorarioCliente equals g.idHorarioCliente
+                                      on x.idHorarioCliente equals g.idHorarioCliente
                                       select new horarioCliente
                                       {
                                           idHorarioCliente = g.idHorarioCliente,

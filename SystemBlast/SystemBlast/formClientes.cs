@@ -73,15 +73,7 @@ namespace SystemBlast
 
         private void txtEdad_OnValueChanged(object sender, EventArgs e)
         {
-            if (int.Parse(txtEdad.Text) <= 100)
-            {
-                _clsCliente.edad = txtEdad.Text;
-            }
-
-            else
-            {
-                MessageBox.Show("El dato que ingreso no se encuentra en los 100");
-            }
+            _clsCliente.edad = txtEdad.Text;
         }
 
         private void txtTelefono_OnValueChanged(object sender, EventArgs e)
@@ -276,7 +268,7 @@ namespace SystemBlast
         {
             this.List();
         }
-
+        //llenar datagreetview de clientes
         private void List()
         {
             try
@@ -289,7 +281,7 @@ namespace SystemBlast
                 MessageBox.Show(e.ToString());
             }
         }
-
+        //Llena caja de texto con informacion de filas del datagreat
         public void llenarDatos()
         {
             this.idCliente = Guid.Parse(dtgLlenardatos.CurrentRow.Cells[0].Value.ToString());
@@ -398,7 +390,7 @@ namespace SystemBlast
             else e.Handled = true; ;
 
 
-            if (txtTelefono.Text.Length == 9)
+            if (txtTelefono.Text.Length == 8)
             {
                 e.Handled = true;
             }

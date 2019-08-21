@@ -29,3 +29,10 @@ C:\Users\User\Documents\GitHub\sistemaTotalFitness\SystemBlast\DataModel\obj\Deb
 C:\Users\User\Documents\GitHub\sistemaTotalFitness\SystemBlast\DataModel\obj\Debug\DataModel.csproj.CopyComplete
 C:\Users\User\Documents\GitHub\sistemaTotalFitness\SystemBlast\DataModel\obj\Debug\DataModel.dll
 C:\Users\User\Documents\GitHub\sistemaTotalFitness\SystemBlast\DataModel\obj\Debug\DataModel.pdb
+C:\Users\BLAST\Documents\GitHub\sistemaTotalFitness\SystemBlast\DataModel\bin\Debug\DataModel.dll
+C:\Users\BLAST\Documents\GitHub\sistemaTotalFitness\SystemBlast\DataModel\bin\Debug\DataModel.pdb
+C:\Users\BLAST\Documents\GitHub\sistemaTotalFitness\SystemBlast\DataModel\obj\Debug\DataModel.csprojAssemblyReference.cache
+C:\Users\BLAST\Documents\GitHub\sistemaTotalFitness\SystemBlast\DataModel\obj\Debug\DataModel.csproj.CoreCompileInputs.cache
+C:\Users\BLAST\Documents\GitHub\sistemaTotalFitness\SystemBlast\DataModel\obj\Debug\DataModel.csproj.CopyComplete
+C:\Users\BLAST\Documents\GitHub\sistemaTotalFitness\SystemBlast\DataModel\obj\Debug\DataModel.dll
+C:\Users\BLAST\Documents\GitHub\sistemaTotalFitness\SystemBlast\DataModel\obj\Debug\DataModel.pdb

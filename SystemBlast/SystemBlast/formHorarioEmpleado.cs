@@ -34,7 +34,7 @@ namespace SystemBlast
             this.FormLoad = true;
             
         }
-
+        // Seleccionar el ID de empleado
         private void cbEmpleado_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (this.FormLoad)
@@ -169,13 +169,13 @@ namespace SystemBlast
         }
 
         private void List()
-        {
+        { 
             try
             {
 
                 dtgLlenardatos.DataSource = (from c in _personRule.ListaHorariosEmpleado() select new { c.idHorarioEmpleado, c.fecha, c.horaEntrada, c.horaSalida, c.nombres, c.apellidos}).ToList();
                 dtgLlenardatos.Columns[0].Visible = false;
-
+                //Mostrar nombre y guarde el ID
                 cbEmpleado.DataSource = (from c in _personRule.ListaEmpleados("", "", "", "") select new { Id = c.idEmpleado, Nombres = c.nombres + " " + c.apellidos }).ToList();
                 cbEmpleado.ValueMember = "Id";
                 cbEmpleado.DisplayMember = "Nombres";

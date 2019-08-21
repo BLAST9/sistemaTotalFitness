@@ -80,17 +80,8 @@ namespace SystemBlast
 
         private void txtEdad_OnValueChanged(object sender, EventArgs e)
         {
+            _Empleados.edad = txtEdad.Text;
 
-            if (int.Parse(txtEdad.Text) <= 100)
-            {
-                _Empleados.edad = txtEdad.Text;
-            }
-
-            else
-            {
-                MessageBox.Show("El dato que ingreso no se encuentra en los 100");
-            }
-            
         }
 
         private void txtTelefono_OnValueChanged(object sender, EventArgs e)
@@ -413,7 +404,7 @@ namespace SystemBlast
             else e.Handled = true; ;
 
 
-            if (txtTelefono.Text.Length == 9)
+            if (txtTelefono.Text.Length == 8)
             {
                 e.Handled = true;
             }

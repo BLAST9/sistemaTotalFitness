@@ -44,3 +44,13 @@ C:\Users\User\Documents\GitHub\sistemaTotalFitness\SystemBlast\BDGenerator\obj\D
 C:\Users\User\Documents\GitHub\sistemaTotalFitness\SystemBlast\BDGenerator\obj\Debug\BDGenerator.csproj.CopyComplete
 C:\Users\User\Documents\GitHub\sistemaTotalFitness\SystemBlast\BDGenerator\obj\Debug\BDGenerator.exe
 C:\Users\User\Documents\GitHub\sistemaTotalFitness\SystemBlast\BDGenerator\obj\Debug\BDGenerator.pdb
+C:\Users\BLAST\Documents\GitHub\sistemaTotalFitness\SystemBlast\BDGenerator\bin\Debug\BDGenerator.exe.config
+C:\Users\BLAST\Documents\GitHub\sistemaTotalFitness\SystemBlast\BDGenerator\bin\Debug\BDGenerator.exe
+C:\Users\BLAST\Documents\GitHub\sistemaTotalFitness\SystemBlast\BDGenerator\bin\Debug\BDGenerator.pdb
+C:\Users\BLAST\Documents\GitHub\sistemaTotalFitness\SystemBlast\BDGenerator\bin\Debug\DataModel.dll
+C:\Users\BLAST\Documents\GitHub\sistemaTotalFitness\SystemBlast\BDGenerator\bin\Debug\DataModel.pdb
+C:\Users\BLAST\Documents\GitHub\sistemaTotalFitness\SystemBlast\BDGenerator\obj\Debug\BDGenerator.csprojAssemblyReference.cache
+C:\Users\BLAST\Documents\GitHub\sistemaTotalFitness\SystemBlast\BDGenerator\obj\Debug\BDGenerator.csproj.CoreCompileInputs.cache
+C:\Users\BLAST\Documents\GitHub\sistemaTotalFitness\SystemBlast\BDGenerator\obj\Debug\BDGenerator.csproj.CopyComplete
+C:\Users\BLAST\Documents\GitHub\sistemaTotalFitness\SystemBlast\BDGenerator\obj\Debug\BDGenerator.exe
+C:\Users\BLAST\Documents\GitHub\sistemaTotalFitness\SystemBlast\BDGenerator\obj\Debug\BDGenerator.pdb

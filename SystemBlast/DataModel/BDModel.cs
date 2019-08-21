@@ -8,9 +8,9 @@ using System.Data.Entity;
 namespace DataModel
 {
     public partial class BDModel : DbContext
-    {
-        public BDModel() : base(@"Data Source=KEVIN-CASTRO\SQLSERVER;Initial Catalog=TotalFitnes;Integrated Security=True") { }
-
+    {// Se hace conexion a SQL
+        public BDModel() : base(@"Data Source=DESKTOP-6H3M9U9\BLAST;Initial Catalog=TotalFitness;Integrated Security=True") { }
+        //Se agregan las tablas 
         public DbSet<clsClienteEntity> clientesEntities { get; set; }
         public DbSet<clsClienteHorarioEntity> clientesHorariosEntities { get; set; }
         public DbSet<clsEmpleadoEntity> empleadosEntities { get; set; }
@@ -21,7 +21,7 @@ namespace DataModel
         public DbSet<clsProductoFacturaEntity> productosFacturasEntities { get; set; }
 
     }
-
+    //Se agregan configuraciones de las tablas
     public partial class BDModel
     {
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
@@ -37,7 +37,7 @@ namespace DataModel
             modelBuilder.Configurations.Add(new clsProductoEntityMapping());
             modelBuilder.Configurations.Add(new clsProductoFacturaEntityMapping());
 
-
+            //Se crea BD
             base.OnModelCreating(modelBuilder);
         }
     }

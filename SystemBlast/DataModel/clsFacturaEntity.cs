@@ -22,6 +22,7 @@ namespace DataModel
         {
             this.productoFacturaEntities = new HashSet<clsProductoFacturaEntity>();
         }
+        // Se establece relacion de la tabla unica
         public virtual clsClienteEntity clienteFacturaEntities { get; set; }
         public virtual ICollection<clsProductoFacturaEntity> productoFacturaEntities { get; set; }
     }

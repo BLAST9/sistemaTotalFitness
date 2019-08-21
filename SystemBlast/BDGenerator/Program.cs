@@ -10,7 +10,7 @@ namespace BDGenerator
     class Program
     {
         static void Main(string[] args)
-        {
+        { //Se crea una instancia de BD Model
             using (var db = new BDModel())
             {
                 Console.WriteLine("PRECIONE ENTER PARA CREAR LA BD...!!!");
@@ -18,6 +18,7 @@ namespace BDGenerator
 
                 try
                 {
+                    //Si no existe la BD se manda a decir que cree una nueva
                     db.Database.CreateIfNotExists();
                 }
                 catch (Exception e)

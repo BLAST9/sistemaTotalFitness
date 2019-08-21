@@ -16,7 +16,7 @@ namespace DataModel
         public string edad { get; set; }
         public string telefono { get; set; }
     }
-
+    //Relaciones
     public partial class clsClienteEntity
     {
         public clsClienteEntity()
@@ -24,10 +24,11 @@ namespace DataModel
             this.clienteHorarioentities = new HashSet<clsClienteHorarioEntity>();
             this.clienteFacturaEntities = new HashSet<clsFacturaEntity>();
         }
+        // Se hace relacion a la tabla de muchos
         public virtual ICollection<clsClienteHorarioEntity> clienteHorarioentities { get; set; }
         public virtual ICollection<clsFacturaEntity> clienteFacturaEntities { get; set; }
     }
-
+    //Se estructura los tipos de datos que tendra la tabla
     public class clsClienteEntityMapping : EntityTypeConfiguration<clsClienteEntity>
     {
         public clsClienteEntityMapping()
