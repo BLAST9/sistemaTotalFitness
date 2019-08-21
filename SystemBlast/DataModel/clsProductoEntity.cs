@@ -14,6 +14,7 @@ namespace DataModel
         public string descripcion { get; set; }
         public int cantidadTotal { get; set; }
         public int cantidadExistencia { get; set; }
+        public int Precio { get; set; }
     }
     public partial class clsProductoEntity
     {
@@ -41,6 +42,9 @@ namespace DataModel
             Property(c => c.cantidadTotal)
                 .IsRequired()
                 .HasColumnType("int");
+            Property(c => c.cantidadExistencia)
+               .IsRequired()
+               .HasColumnType("int");
             Property(c => c.cantidadExistencia)
                .IsRequired()
                .HasColumnType("int");

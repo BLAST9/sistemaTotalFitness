@@ -435,22 +435,6 @@ namespace CNegocio
             }
         }
 
-        public void ActualizarFactura(clsFacturaEntity Factura)
-        {
-            using (var db = new BDModel())
-            {
-                var p = db.facturassEntities.Where(c => c.idFactura == Factura.idFactura).FirstOrDefault();
-
-                if (p != null)
-                {
-                    p.cantidad = Factura.cantidad;
-                    p.precio = Factura.precio;
-
-                    db.Entry(p).State = System.Data.Entity.EntityState.Modified;
-                    db.SaveChanges();
-                }
-            }
-        }
 
         public void EliminarFactura(clsFacturaEntity Factura)
         {

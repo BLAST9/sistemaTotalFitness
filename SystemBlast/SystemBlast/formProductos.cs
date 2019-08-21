@@ -285,5 +285,13 @@ namespace SystemBlast
                 e.Handled = true;
             }
         }
+
+        private void txtPrecio_TextChanged(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(txtCantidad.Text) || !string.IsNullOrEmpty(txtCantidad.Text))
+                _productos.Precio = Convert.ToInt32(txtPrecio.Text);
+            else
+                this._productos.Precio = 0;
+        }
     }
 }

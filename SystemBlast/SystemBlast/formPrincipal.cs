@@ -86,5 +86,12 @@ namespace SystemBlast
             txtUsuario.Focus();
         }
 
+        private void txtUsuario_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter)
+            {
+                txtContraseña.Focus();
+            }
+        }
     }
 }

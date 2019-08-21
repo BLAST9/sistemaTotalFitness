@@ -12,6 +12,8 @@ namespace DataModel
         public Guid idProductoFactura { get; set; }
         public Guid idFactura { get; set; }
         public Guid idProducto { get; set; }
+        public int cantidad { get; set; }
+        public int precio { get; set; }
     }
 
     public partial class clsProductoFacturaEntity
@@ -26,6 +28,12 @@ namespace DataModel
         {
             ToTable("tblProductosFacturas");
             HasKey(c => c.idProductoFactura);
+            Property(c => c.cantidad)
+                .IsRequired()
+                .HasColumnType("int");
+            Property(c => c.precio)
+                .IsRequired()
+                .HasColumnType("int");
         }
 
     }
