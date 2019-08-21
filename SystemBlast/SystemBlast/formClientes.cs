@@ -73,7 +73,15 @@ namespace SystemBlast
 
         private void txtEdad_OnValueChanged(object sender, EventArgs e)
         {
-            _clsCliente.edad = txtEdad.Text;
+            if (int.Parse(txtEdad.Text) <= 100)
+            {
+                _clsCliente.edad = txtEdad.Text;
+            }
+
+            else
+            {
+                MessageBox.Show("El dato que ingreso no se encuentra en los 100");
+            }
         }
 
         private void txtTelefono_OnValueChanged(object sender, EventArgs e)

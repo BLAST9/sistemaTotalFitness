@@ -198,6 +198,10 @@ namespace SystemBlast
                 detalles = new List<DetalleFactura>();
                 CargarDatosEnGrid();
 
+                txtCantidad.Text = "";
+
+                this.CargarDatosEnGrid();
+
                 MessageBox.Show("Facturado correctamente!!!");
 
             }
@@ -205,6 +209,55 @@ namespace SystemBlast
             {
                 MessageBox.Show($"Error: {ex.Message}");
             }
+        }
+
+        private void txtCantidad_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsNumber(e.KeyChar))
+                e.Handled = false;
+            else if (Char.IsControl(e.KeyChar))
+                e.Handled = false;
+            else if (Char.IsSeparator(e.KeyChar))
+                e.Handled = false;
+            else if (Char.IsPunctuation(e.KeyChar))
+                e.Handled = false;
+            else e.Handled = true; ;
+
+
+            if (txtCantidad.Text.Length == 5)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtPrecio_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsNumber(e.KeyChar))
+                e.Handled = false;
+            else if (Char.IsControl(e.KeyChar))
+                e.Handled = false;
+            else if (Char.IsSeparator(e.KeyChar))
+                e.Handled = false;
+            else if (Char.IsPunctuation(e.KeyChar))
+                e.Handled = false;
+            else e.Handled = true; ;
+
+
+            if (txtPrecio.Text.Length == 5)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void btnFacturas_Click(object sender, EventArgs e)
+        {
+            formListaFacturas x = new formListaFacturas();
+
+            x.BringToFront();
+            x.Show();
+
+            x.Left = 245;
+            x.Top = 120;
         }
     }
 }

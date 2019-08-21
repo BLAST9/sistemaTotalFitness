@@ -17,11 +17,8 @@ namespace DataModel
         public DbSet<clsFacturaEntity> facturassEntities { get; set; }
         public DbSet<clsHorarioClienteEntity> horariosClientesEntities { get; set; }
         public DbSet<clsHorarioEmpleadoEntity> horariosEmpleadosEntities { get; set; }
-        public DbSet<clsMensualidadEntity> mensualidadesEntities { get; set; }
         public DbSet<clsProductoEntity> productosEntities { get; set; }
         public DbSet<clsProductoFacturaEntity> productosFacturasEntities { get; set; }
-        public DbSet<clsTipoEjercicioEntity> tiposEjerciciosEntities { get; set; }
-        public DbSet<clsMensualidadEjercicioEntity> mensualidadesEjerciciosEntities { get; set; }
 
     }
 
@@ -37,11 +34,9 @@ namespace DataModel
             modelBuilder.Configurations.Add(new clsFacturaEntityMapping());
             modelBuilder.Configurations.Add(new clsHorarioClienteEntityMapping());
             modelBuilder.Configurations.Add(new clsHorarioEmpleadoEntityMapping());
-            modelBuilder.Configurations.Add(new clsMensualidadEntityMapping());
             modelBuilder.Configurations.Add(new clsProductoEntityMapping());
             modelBuilder.Configurations.Add(new clsProductoFacturaEntityMapping());
-            modelBuilder.Configurations.Add(new clsTipoEjercicioEntityMapping());
-            modelBuilder.Configurations.Add(new clsMensualidadEjercicioEntityMapping());
+
 
             base.OnModelCreating(modelBuilder);
         }

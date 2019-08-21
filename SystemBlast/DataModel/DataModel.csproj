@@ -54,10 +54,7 @@
     <Compile Include="clsFacturaEntity.cs" />
     <Compile Include="clsHorarioClienteEntity.cs" />
     <Compile Include="clsHorarioEmpleadoEntity.cs" />
-    <Compile Include="clsMensualidadEntity.cs" />
-    <Compile Include="clsMensualidadEjercicioEntity.cs" />
     <Compile Include="clsProductoEntity.cs" />
-    <Compile Include="clsTipoEjercicioEntity.cs" />
     <Compile Include="clsProductoFacturaEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

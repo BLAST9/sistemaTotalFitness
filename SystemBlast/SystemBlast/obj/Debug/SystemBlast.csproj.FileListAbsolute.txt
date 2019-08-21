@@ -116,6 +116,4 @@ C:\Users\User\Documents\GitHub\sistemaTotalFitness\SystemBlast\SystemBlast\obj\D
 C:\Users\User\Documents\GitHub\sistemaTotalFitness\SystemBlast\SystemBlast\obj\Debug\SystemBlast.pdb
 C:\Users\User\Documents\GitHub\sistemaTotalFitness\SystemBlast\SystemBlast\obj\Debug\SystemBlast.formEmpleado.resources
 C:\Users\User\Documents\GitHub\sistemaTotalFitness\SystemBlast\SystemBlast\obj\Debug\SystemBlast.formHorarioCliente.resources
-C:\Users\User\Documents\GitHub\sistemaTotalFitness\SystemBlast\SystemBlast\obj\Debug\SystemBlast.formMensualidad.resources
-C:\Users\User\Documents\GitHub\sistemaTotalFitness\SystemBlast\SystemBlast\obj\Debug\SystemBlast.formMensualidadEjercicio.resources
-C:\Users\User\Documents\GitHub\sistemaTotalFitness\SystemBlast\SystemBlast\obj\Debug\SystemBlast.formTipoEjercicio.resources
+C:\Users\User\Documents\GitHub\sistemaTotalFitness\SystemBlast\SystemBlast\obj\Debug\SystemBlast.formListaFacturas.resources

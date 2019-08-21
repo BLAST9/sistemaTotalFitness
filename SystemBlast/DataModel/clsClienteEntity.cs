@@ -22,11 +22,9 @@ namespace DataModel
         public clsClienteEntity()
         {
             this.clienteHorarioentities = new HashSet<clsClienteHorarioEntity>();
-            this.clienteMensualidadEntities = new HashSet<clsMensualidadEntity>();
             this.clienteFacturaEntities = new HashSet<clsFacturaEntity>();
         }
         public virtual ICollection<clsClienteHorarioEntity> clienteHorarioentities { get; set; }
-        public virtual ICollection<clsMensualidadEntity> clienteMensualidadEntities { get; set; }
         public virtual ICollection<clsFacturaEntity> clienteFacturaEntities { get; set; }
     }
 

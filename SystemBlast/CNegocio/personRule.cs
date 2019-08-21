@@ -60,7 +60,7 @@ namespace CNegocio
                 cliente.telefono = "---------";
             }
         }
-       
+
         public Guid GuardarClientes(clsClienteEntity Clientes)
         {
             using (var db = new BDModel()) //Creamos un objeto de BDModel para acceder a los atributos de la clase clsClientesEntity 
@@ -141,7 +141,7 @@ namespace CNegocio
                     p.apellidos = Clientes.apellidos;
                     p.edad = Clientes.edad;
                     p.telefono = Clientes.telefono;
-                   
+
 
                     db.Entry(p).State = System.Data.Entity.EntityState.Modified; //Decimos que la consulta de tipo modificacion
                     db.SaveChanges(); //Guardamos los cambios
@@ -166,17 +166,17 @@ namespace CNegocio
         //Consultas cliente horarios
         public Guid GuardarClientesHorarios(clsClienteHorarioEntity ClientesH)
         {
-            using (var db = new BDModel()) 
+            using (var db = new BDModel())
             {
                 try
                 {
-                    ClientesH.idClienteHorario = Guid.NewGuid(); 
+                    ClientesH.idClienteHorario = Guid.NewGuid();
                     db.clientesHorariosEntities.Add(ClientesH);
-                    db.SaveChanges(); 
+                    db.SaveChanges();
                 }
                 catch (Exception e)
                 {
-                    e.ToString(); 
+                    e.ToString();
                 }
                 return ClientesH.idClienteHorario;
             }
@@ -187,12 +187,12 @@ namespace CNegocio
         {
             using (var db = new BDModel())
             {
-                var p = db.clientesHorariosEntities.Where(c => c.idClienteHorario == ClientesH.idClienteHorario).FirstOrDefault(); 
+                var p = db.clientesHorariosEntities.Where(c => c.idClienteHorario == ClientesH.idClienteHorario).FirstOrDefault();
 
-                if (p != null) 
+                if (p != null)
                 {
-                    db.Entry(p).State = System.Data.Entity.EntityState.Deleted; 
-                    db.SaveChanges(); 
+                    db.Entry(p).State = System.Data.Entity.EntityState.Deleted;
+                    db.SaveChanges();
                 }
             }
         }
@@ -291,10 +291,10 @@ namespace CNegocio
         {
             using (var db = new BDModel())
             {
-              
-                var Empleados = (from c in db.empleadosEntities 
-                                where (c.nombres).StartsWith(Nombres) && (c.apellidos).StartsWith(Apellidos) && (c.cargo).StartsWith(cargos) && (c.turno).StartsWith(turno)
-                                 select c).ToList(); 
+
+                var Empleados = (from c in db.empleadosEntities
+                                 where (c.nombres).StartsWith(Nombres) && (c.apellidos).StartsWith(Apellidos) && (c.cargo).StartsWith(cargos) && (c.turno).StartsWith(turno)
+                                 select c).ToList();
 
                 return Empleados;
 
@@ -427,8 +427,8 @@ namespace CNegocio
             {
 
                 var Factura = (from c in db.facturassEntities
-                                 where (c.fecha == Fecha)
-                                 select c).ToList();
+                               where (c.fecha == Fecha)
+                               select c).ToList();
 
                 return Factura;
 
@@ -507,17 +507,25 @@ namespace CNegocio
             public string apellidos { get; set; }
         }
 
-        public List<horarioCliente > ListaHorariosClientes()
+        public List<horarioCliente> ListaHorariosClientes()
         {
             using (var db = new BDModel())
             {
 
-                var Horariocliente = (from c in db.clientesEntities join x in db.clientesHorariosEntities
-                                      on c.idCliente equals x.idCliente join g in db.horariosClientesEntities 
-                                      on x.idHorarioCliente equals g.idHorarioCliente
-                                      select new horarioCliente { idHorarioCliente = g.idHorarioCliente, fecha = g.fecha,
-                                                                  horaEntrada = g.horarioEntrada, horaSalida = g.horarioSalida,
-                                                                  nombres = c.nombres, apellidos = c.apellidos }).ToList();
+                var Horariocliente = (from c in db.clientesEntities
+                                      join x in db.clientesHorariosEntities
+        on c.idCliente equals x.idCliente
+                                      join g in db.horariosClientesEntities
+    on x.idHorarioCliente equals g.idHorarioCliente
+                                      select new horarioCliente
+                                      {
+                                          idHorarioCliente = g.idHorarioCliente,
+                                          fecha = g.fecha,
+                                          horaEntrada = g.horarioEntrada,
+                                          horaSalida = g.horarioSalida,
+                                          nombres = c.nombres,
+                                          apellidos = c.apellidos
+                                      }).ToList();
 
                 return Horariocliente;
 
@@ -650,64 +658,6 @@ namespace CNegocio
             }
         }
 
-        //Consulta Mensualidad
-
-        public Guid GuardarMensualidad(clsMensualidadEntity Men)
-        {
-            using (var db = new BDModel())
-            {
-                try
-                {
-                    Men.idMensualidad = Guid.NewGuid();
-                    db.mensualidadesEntities.Add(Men);
-                    db.SaveChanges();
-                }
-                catch (Exception e)
-                {
-                    e.ToString();
-                }
-                return Men.idMensualidad;
-            }
-
-        }
-
-        public class mensualidad
-        {
-            public Guid idMensualidad { get; set; }
-            public string Nombres { get; set; }
-            public string Apellidos { get; set; }
-            public DateTime fechaInicio { get; set; }
-            public DateTime fechaCierre{ get; set; }
-
-           
-        }
-
-        public List<mensualidad> ListaMensualidad()
-        {
-            using (var db = new BDModel())
-            {
-                var mensualidadlist = (from c in db.mensualidadesEntities join x in db.clientesEntities
-                                       on c.idCliente equals x.idCliente
-                                       select new mensualidad { idMensualidad = c.idMensualidad, Nombres = x.nombres, Apellidos = x.apellidos , fechaInicio = c.fechaInicio, fechaCierre = c.fechaCierre}).ToList();
-
-                return mensualidadlist;
-
-            }
-        }
-
-        public void EliminarMensualidad(clsMensualidadEntity Men)
-        {
-            using (var db = new BDModel())
-            {
-                var p = db.mensualidadesEntities.Where(c => c.idMensualidad == Men.idMensualidad).FirstOrDefault();
-
-                if (p != null)
-                {
-                    db.Entry(p).State = System.Data.Entity.EntityState.Deleted;
-                    db.SaveChanges();
-                }
-            }
-        }
 
         //Consulta Producto
 
@@ -766,8 +716,21 @@ namespace CNegocio
             {
 
                 var Producto = (from c in db.productosEntities
-                                 where (c.nombre).StartsWith(Nombre) 
-                                 select c).ToList();
+                                where (c.nombre).StartsWith(Nombre)
+                                select c).ToList();
+
+                return Producto;
+
+            }
+        }
+
+        public List<clsProductoEntity> ListaProductoexistencia(string Nombre)
+        {
+            using (var db = new BDModel())
+            {
+
+                var Producto = (from c in db.productosEntities
+                                select c).ToList();
 
                 return Producto;
 
@@ -785,6 +748,23 @@ namespace CNegocio
                     p.nombre = Producto.nombre;
                     p.descripcion = Producto.descripcion;
                     p.cantidadTotal = Producto.cantidadTotal;
+                    p.Precio = Producto.Precio;
+
+                    db.Entry(p).State = System.Data.Entity.EntityState.Modified;
+                    db.SaveChanges();
+                }
+            }
+        }
+
+        public void sumaActualizarProducto(clsProductoEntity Producto)
+        {
+            using (var db = new BDModel())
+            {
+                var p = db.productosEntities.Where(c => c.idProducto == Producto.idProducto).FirstOrDefault();
+
+                if (p != null)
+                {
+                    p.cantidadExistencia = Producto.cantidadExistencia + Producto.cantidadTotal;
 
                     db.Entry(p).State = System.Data.Entity.EntityState.Modified;
                     db.SaveChanges();
@@ -809,142 +789,99 @@ namespace CNegocio
 
         //Consulta ProductoFacturas
 
-        public Guid GuardarProductoFacturas(clsProductoFacturaEntity ProductoFac)
+        /* public Guid GuardarProductoFacturas(clsProductoFacturaEntity ProductoFac)
+         {
+             using (var db = new BDModel())
+             {
+                 try
+                 {
+                     ProductoFac.idProductoFactura = Guid.NewGuid();
+                     db.productosFacturasEntities.Add(ProductoFac);
+                     db.SaveChanges();
+                 }
+                 catch (Exception e)
+                 {
+                     e.ToString();
+                 }
+                 return ProductoFac.idProductoFactura;
+             }
+
+         }
+
+         public void ActualizarProductoFacturas(clsProductoFacturaEntity ProductoFac)
+         {
+             using (var db = new BDModel())
+             {
+                 var p = db.productosFacturasEntities.Where(c => c.idProductoFactura == ProductoFac.idProductoFactura).FirstOrDefault();
+
+                 if (p != null)
+                 {
+                     p.idFactura = ProductoFac.idFactura;
+                     p.idProducto = ProductoFac.idProducto;
+
+                     db.Entry(p).State = System.Data.Entity.EntityState.Modified;
+                     db.SaveChanges();
+                 }
+             }
+         }
+
+         public void EliminarProductoFacturas(clsProductoFacturaEntity ProductoFac)
+         {
+             using (var db = new BDModel())
+             {
+                 var p = db.productosFacturasEntities.Where(c => c.idProductoFactura == ProductoFac.idProductoFactura).FirstOrDefault();
+
+                 if (p != null)
+                 {
+                     db.Entry(p).State = System.Data.Entity.EntityState.Deleted;
+                     db.SaveChanges();
+                 }
+             }
+         }
+         */
+
+        public class listadoFactura
         {
-            using (var db = new BDModel())
-            {
-                try
-                {
-                    ProductoFac.idProductoFactura = Guid.NewGuid();
-                    db.productosFacturasEntities.Add(ProductoFac);
-                    db.SaveChanges();
-                }
-                catch (Exception e)
-                {
-                    e.ToString();
-                }
-                return ProductoFac.idProductoFactura;
-            }
+            public Guid idFactura { get; set; }
+            public string Nombres { get; set; }
+            public string apellidos { get; set; }
+            public DateTime fechaFactura { get; set; }
+            public DateTime fechaInicio { get; set; }
+            public DateTime fechaCierre { get; set; }
+            public string Producto { get; set; }
+            public int cantidad { get; set; }
+            public int precio { get; set; }
+
 
         }
 
-        public void ActualizarProductoFacturas(clsProductoFacturaEntity ProductoFac)
-        {
-            using (var db = new BDModel())
-            {
-                var p = db.productosFacturasEntities.Where(c => c.idProductoFactura == ProductoFac.idProductoFactura).FirstOrDefault();
-
-                if (p != null)
-                {
-                    p.idFactura = ProductoFac.idFactura;
-                    p.idProducto = ProductoFac.idProducto;
-
-                    db.Entry(p).State = System.Data.Entity.EntityState.Modified;
-                    db.SaveChanges();
-                }
-            }
-        }
-
-        public void EliminarProductoFacturas(clsProductoFacturaEntity ProductoFac)
-        {
-            using (var db = new BDModel())
-            {
-                var p = db.productosFacturasEntities.Where(c => c.idProductoFactura == ProductoFac.idProductoFactura).FirstOrDefault();
-
-                if (p != null)
-                {
-                    db.Entry(p).State = System.Data.Entity.EntityState.Deleted;
-                    db.SaveChanges();
-                }
-            }
-        }
-
-        //Consulta TipoEjercicio
-
-        public void IsValidTipoEjercicioGuardar(clsTipoEjercicioEntity ejercicio)
-        {
-
-            if (ejercicio == null)
-            {
-
-                throw new Exception("es necesario ingresar los datos de un dato");
-
-            }
-
-            if (string.IsNullOrWhiteSpace(ejercicio.tipoEjercicio) || string.IsNullOrEmpty(ejercicio.tipoEjercicio))
-            {
-
-                throw new Exception(" es necesario ingresar tipo de ejercicio");
-
-            }
-            if (string.IsNullOrWhiteSpace(ejercicio.Precio.ToString()) || string.IsNullOrEmpty(ejercicio.Precio.ToString()))
-            {
-
-                throw new Exception("es necesario ingresar precio");
-
-            }
-
-        }
-
-        public Guid GuardarTipoEjercicio(clsTipoEjercicioEntity tipoejer)
-        {
-            using (var db = new BDModel())
-            {
-                try
-                {
-                    tipoejer.idTipoEjercicio = Guid.NewGuid();
-                    db.tiposEjerciciosEntities.Add(tipoejer);
-                    db.SaveChanges();
-                }
-                catch (Exception e)
-                {
-                    e.ToString();
-                }
-                return tipoejer.idTipoEjercicio;
-            }
-
-        }
-        public List<clsTipoEjercicioEntity> ListaTipoEjercicio()
+        public List<listadoFactura> listarFactura()
         {
             using (var db = new BDModel())
             {
 
-                var Tipoe = (from c in db.tiposEjerciciosEntities
-                                select c).ToList();
+                var Horarioempleado = (from c in db.clientesEntities
+                                       join x in db.facturassEntities
+                                       on c.idCliente equals x.idCliente 
+                                       join v in db.productosFacturasEntities
+                                       on x.idFactura equals v.idFactura 
+                                       join r in db.productosEntities 
+                                       on v.idProducto equals r.idProducto
+                                       select new listadoFactura
+                                       {
+                                           idFactura = x.idFactura,
+                                           Nombres = c.nombres,
+                                           apellidos = c.apellidos,
+                                           fechaFactura = x.fecha,
+                                           fechaInicio = x.fechaInicio,
+                                           fechaCierre = x.fechaCierre,
+                                           Producto = r.nombre,
+                                           cantidad = v.cantidad,
+                                           precio = v.precio
+                                       }).ToList();
 
-                return Tipoe;
+                return Horarioempleado;
 
-            }
-        }
-
-        public void ActualizarTipoEjercicio(clsTipoEjercicioEntity tipoejer)
-        {
-            using (var db = new BDModel())
-            {
-                var p = db.tiposEjerciciosEntities.Where(c => c.idTipoEjercicio == tipoejer.idTipoEjercicio).FirstOrDefault();
-
-                if (p != null)
-                {
-                    p.tipoEjercicio = tipoejer.tipoEjercicio;
-                    p.Precio = tipoejer.Precio;
-
-                    db.Entry(p).State = System.Data.Entity.EntityState.Modified;
-                    db.SaveChanges();
-                }
-            }
-        }
-
-        public void EliminarTipoEjercicio(clsTipoEjercicioEntity tipoejer)
-        {
-            using (var db = new BDModel())
-            {
-                var p = db.tiposEjerciciosEntities.Where(c => c.idTipoEjercicio == tipoejer.idTipoEjercicio).FirstOrDefault();
-
-                if (p != null)
-                {
-                    db.Entry(p).State = System.Data.Entity.EntityState.Deleted;
-                    db.SaveChanges();
-                }
             }
         }
 

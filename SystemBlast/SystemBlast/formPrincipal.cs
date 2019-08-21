@@ -34,6 +34,15 @@ namespace SystemBlast
         private void btnEntrar_Click_1(object sender, EventArgs e)
         {
             this.ValidarUsuario();
+           /* if (txtContraseña.Text.Length >= 6)
+            {
+                
+            }
+
+            else
+            {
+                MessageBox.Show("La contraseña debe de tener de 6 a 8 carcteres");
+            }*/
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
@@ -66,21 +75,21 @@ namespace SystemBlast
 
         public void ValidarUsuario()
         {
-           /* var x = _personRule.ValidacionUsuario(txtUsuario.Text, txtContraseña.Text);
+            var x = _personRule.ValidacionUsuario(txtUsuario.Text, txtContraseña.Text);
 
              if (x != null)
              {
-                */this.Visible = false;
+                this.Visible = false;
                 formMenu y = new formMenu();
                 y.ShowDialog();
                 this.Visible = true;
-             /*}
+             }
 
              else
              {
                  MessageBox.Show("Usuario o contraseña incorrecto");
              }
-             */
+             
             txtUsuario.Text = "";
             txtContraseña.Text = "";
             txtUsuario.Focus();

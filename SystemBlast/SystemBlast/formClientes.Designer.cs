@@ -341,7 +341,7 @@
             this.txtCedula.HintText = "";
             this.txtCedula.isPassword = false;
             this.txtCedula.LineFocusedColor = System.Drawing.Color.Yellow;
-            this.txtCedula.LineIdleColor = System.Drawing.Color.Maroon;
+            this.txtCedula.LineIdleColor = System.Drawing.Color.White;
             this.txtCedula.LineMouseHoverColor = System.Drawing.Color.Yellow;
             this.txtCedula.LineThickness = 3;
             this.txtCedula.Location = new System.Drawing.Point(13, 180);
@@ -375,7 +375,7 @@
             this.txtTelefono.HintText = "";
             this.txtTelefono.isPassword = false;
             this.txtTelefono.LineFocusedColor = System.Drawing.Color.Yellow;
-            this.txtTelefono.LineIdleColor = System.Drawing.Color.Maroon;
+            this.txtTelefono.LineIdleColor = System.Drawing.Color.White;
             this.txtTelefono.LineMouseHoverColor = System.Drawing.Color.Yellow;
             this.txtTelefono.LineThickness = 3;
             this.txtTelefono.Location = new System.Drawing.Point(563, 176);
@@ -408,7 +408,7 @@
             this.txtEdad.HintText = "";
             this.txtEdad.isPassword = false;
             this.txtEdad.LineFocusedColor = System.Drawing.Color.Yellow;
-            this.txtEdad.LineIdleColor = System.Drawing.Color.Maroon;
+            this.txtEdad.LineIdleColor = System.Drawing.Color.White;
             this.txtEdad.LineMouseHoverColor = System.Drawing.Color.Yellow;
             this.txtEdad.LineThickness = 3;
             this.txtEdad.Location = new System.Drawing.Point(391, 176);
@@ -429,7 +429,7 @@
             this.txtApellidos.HintText = "";
             this.txtApellidos.isPassword = false;
             this.txtApellidos.LineFocusedColor = System.Drawing.Color.Yellow;
-            this.txtApellidos.LineIdleColor = System.Drawing.Color.Maroon;
+            this.txtApellidos.LineIdleColor = System.Drawing.Color.White;
             this.txtApellidos.LineMouseHoverColor = System.Drawing.Color.Yellow;
             this.txtApellidos.LineThickness = 3;
             this.txtApellidos.Location = new System.Drawing.Point(391, 57);
@@ -451,7 +451,7 @@
             this.txtNombres.HintText = "";
             this.txtNombres.isPassword = false;
             this.txtNombres.LineFocusedColor = System.Drawing.Color.Yellow;
-            this.txtNombres.LineIdleColor = System.Drawing.Color.Maroon;
+            this.txtNombres.LineIdleColor = System.Drawing.Color.White;
             this.txtNombres.LineMouseHoverColor = System.Drawing.Color.Yellow;
             this.txtNombres.LineThickness = 3;
             this.txtNombres.Location = new System.Drawing.Point(13, 57);

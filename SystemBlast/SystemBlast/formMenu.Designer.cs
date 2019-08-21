@@ -37,20 +37,15 @@
             this.Barra = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnHorarioCliente = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnExtras = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnRegistarCliente = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnPrincipal = new Bunifu.Framework.UI.BunifuImageButton();
-            this.btnRegistroMensualidad = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnTipoEjercicio = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnHorarioEmpleado = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnMenu = new Bunifu.Framework.UI.BunifuImageButton();
             this.Logo = new System.Windows.Forms.PictureBox();
             this.btnRegistroEmpleado = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnMensualidadEjercicio = new Bunifu.Framework.UI.BunifuFlatButton();
             this.lblTiempo = new System.Windows.Forms.Label();
             this.lblHora = new System.Windows.Forms.Label();
             this.lblFecha = new System.Windows.Forms.Label();
-            this.btnMensualidad = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnFacturas = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnProductos = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnEmpleados = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -94,20 +89,15 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.btnHorarioCliente);
-            this.panel1.Controls.Add(this.btnExtras);
             this.panel1.Controls.Add(this.btnRegistarCliente);
             this.panel1.Controls.Add(this.btnPrincipal);
-            this.panel1.Controls.Add(this.btnRegistroMensualidad);
-            this.panel1.Controls.Add(this.btnTipoEjercicio);
             this.panel1.Controls.Add(this.btnHorarioEmpleado);
             this.panel1.Controls.Add(this.btnMenu);
             this.panel1.Controls.Add(this.Logo);
             this.panel1.Controls.Add(this.btnRegistroEmpleado);
-            this.panel1.Controls.Add(this.btnMensualidadEjercicio);
             this.panel1.Controls.Add(this.lblTiempo);
             this.panel1.Controls.Add(this.lblHora);
             this.panel1.Controls.Add(this.lblFecha);
-            this.panel1.Controls.Add(this.btnMensualidad);
             this.panel1.Controls.Add(this.btnFacturas);
             this.panel1.Controls.Add(this.btnProductos);
             this.panel1.Controls.Add(this.btnEmpleados);
@@ -158,44 +148,6 @@
             this.btnHorarioCliente.Textcolor = System.Drawing.Color.White;
             this.btnHorarioCliente.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHorarioCliente.Click += new System.EventHandler(this.btnHorarioCliente_Click);
-            // 
-            // btnExtras
-            // 
-            this.btnExtras.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
-            this.btnExtras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.btnExtras.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnExtras.BorderRadius = 0;
-            this.btnExtras.ButtonText = "     Extras";
-            this.btnExtras.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panelAnimator2.SetDecoration(this.btnExtras, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.btnExtras, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.btnExtras, BunifuAnimatorNS.DecorationType.None);
-            this.btnExtras.DisabledColor = System.Drawing.Color.Gray;
-            this.btnExtras.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnExtras.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnExtras.Iconimage")));
-            this.btnExtras.Iconimage_right = null;
-            this.btnExtras.Iconimage_right_Selected = null;
-            this.btnExtras.Iconimage_Selected = null;
-            this.btnExtras.IconMarginLeft = 0;
-            this.btnExtras.IconMarginRight = 0;
-            this.btnExtras.IconRightVisible = true;
-            this.btnExtras.IconRightZoom = 0D;
-            this.btnExtras.IconVisible = true;
-            this.btnExtras.IconZoom = 60D;
-            this.btnExtras.IsTab = true;
-            this.btnExtras.Location = new System.Drawing.Point(0, 545);
-            this.btnExtras.Name = "btnExtras";
-            this.btnExtras.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.btnExtras.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.btnExtras.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
-            this.btnExtras.selected = false;
-            this.btnExtras.Size = new System.Drawing.Size(200, 33);
-            this.btnExtras.TabIndex = 142;
-            this.btnExtras.Text = "     Extras";
-            this.btnExtras.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExtras.Textcolor = System.Drawing.Color.White;
-            this.btnExtras.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExtras.Click += new System.EventHandler(this.btnExtras_Click);
             // 
             // btnRegistarCliente
             // 
@@ -251,82 +203,6 @@
             this.btnPrincipal.TabStop = false;
             this.btnPrincipal.Zoom = 10;
             this.btnPrincipal.Click += new System.EventHandler(this.btnPrincipal_Click);
-            // 
-            // btnRegistroMensualidad
-            // 
-            this.btnRegistroMensualidad.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
-            this.btnRegistroMensualidad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.btnRegistroMensualidad.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnRegistroMensualidad.BorderRadius = 0;
-            this.btnRegistroMensualidad.ButtonText = "     Registro";
-            this.btnRegistroMensualidad.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panelAnimator2.SetDecoration(this.btnRegistroMensualidad, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.btnRegistroMensualidad, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.btnRegistroMensualidad, BunifuAnimatorNS.DecorationType.None);
-            this.btnRegistroMensualidad.DisabledColor = System.Drawing.Color.Gray;
-            this.btnRegistroMensualidad.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnRegistroMensualidad.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnRegistroMensualidad.Iconimage")));
-            this.btnRegistroMensualidad.Iconimage_right = null;
-            this.btnRegistroMensualidad.Iconimage_right_Selected = null;
-            this.btnRegistroMensualidad.Iconimage_Selected = null;
-            this.btnRegistroMensualidad.IconMarginLeft = 0;
-            this.btnRegistroMensualidad.IconMarginRight = 0;
-            this.btnRegistroMensualidad.IconRightVisible = true;
-            this.btnRegistroMensualidad.IconRightZoom = 0D;
-            this.btnRegistroMensualidad.IconVisible = true;
-            this.btnRegistroMensualidad.IconZoom = 60D;
-            this.btnRegistroMensualidad.IsTab = true;
-            this.btnRegistroMensualidad.Location = new System.Drawing.Point(48, 370);
-            this.btnRegistroMensualidad.Name = "btnRegistroMensualidad";
-            this.btnRegistroMensualidad.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.btnRegistroMensualidad.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.btnRegistroMensualidad.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
-            this.btnRegistroMensualidad.selected = false;
-            this.btnRegistroMensualidad.Size = new System.Drawing.Size(151, 33);
-            this.btnRegistroMensualidad.TabIndex = 24;
-            this.btnRegistroMensualidad.Text = "     Registro";
-            this.btnRegistroMensualidad.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRegistroMensualidad.Textcolor = System.Drawing.Color.White;
-            this.btnRegistroMensualidad.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistroMensualidad.Click += new System.EventHandler(this.btnRegistroMensualidad_Click);
-            // 
-            // btnTipoEjercicio
-            // 
-            this.btnTipoEjercicio.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
-            this.btnTipoEjercicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.btnTipoEjercicio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnTipoEjercicio.BorderRadius = 0;
-            this.btnTipoEjercicio.ButtonText = "     Tipo Ejercicio";
-            this.btnTipoEjercicio.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panelAnimator2.SetDecoration(this.btnTipoEjercicio, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.btnTipoEjercicio, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.btnTipoEjercicio, BunifuAnimatorNS.DecorationType.None);
-            this.btnTipoEjercicio.DisabledColor = System.Drawing.Color.Gray;
-            this.btnTipoEjercicio.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnTipoEjercicio.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnTipoEjercicio.Iconimage")));
-            this.btnTipoEjercicio.Iconimage_right = null;
-            this.btnTipoEjercicio.Iconimage_right_Selected = null;
-            this.btnTipoEjercicio.Iconimage_Selected = null;
-            this.btnTipoEjercicio.IconMarginLeft = 0;
-            this.btnTipoEjercicio.IconMarginRight = 0;
-            this.btnTipoEjercicio.IconRightVisible = true;
-            this.btnTipoEjercicio.IconRightZoom = 0D;
-            this.btnTipoEjercicio.IconVisible = true;
-            this.btnTipoEjercicio.IconZoom = 60D;
-            this.btnTipoEjercicio.IsTab = true;
-            this.btnTipoEjercicio.Location = new System.Drawing.Point(48, 440);
-            this.btnTipoEjercicio.Name = "btnTipoEjercicio";
-            this.btnTipoEjercicio.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.btnTipoEjercicio.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.btnTipoEjercicio.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
-            this.btnTipoEjercicio.selected = false;
-            this.btnTipoEjercicio.Size = new System.Drawing.Size(150, 33);
-            this.btnTipoEjercicio.TabIndex = 23;
-            this.btnTipoEjercicio.Text = "     Tipo Ejercicio";
-            this.btnTipoEjercicio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTipoEjercicio.Textcolor = System.Drawing.Color.White;
-            this.btnTipoEjercicio.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTipoEjercicio.Click += new System.EventHandler(this.btnTipoEjercicio_Click);
             // 
             // btnHorarioEmpleado
             // 
@@ -434,44 +310,6 @@
             this.btnRegistroEmpleado.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistroEmpleado.Click += new System.EventHandler(this.btnRegistroEmpleado_Click);
             // 
-            // btnMensualidadEjercicio
-            // 
-            this.btnMensualidadEjercicio.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
-            this.btnMensualidadEjercicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.btnMensualidadEjercicio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnMensualidadEjercicio.BorderRadius = 0;
-            this.btnMensualidadEjercicio.ButtonText = "     Mensualidad           Ejercicio";
-            this.btnMensualidadEjercicio.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panelAnimator2.SetDecoration(this.btnMensualidadEjercicio, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.btnMensualidadEjercicio, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.btnMensualidadEjercicio, BunifuAnimatorNS.DecorationType.None);
-            this.btnMensualidadEjercicio.DisabledColor = System.Drawing.Color.Gray;
-            this.btnMensualidadEjercicio.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnMensualidadEjercicio.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnMensualidadEjercicio.Iconimage")));
-            this.btnMensualidadEjercicio.Iconimage_right = null;
-            this.btnMensualidadEjercicio.Iconimage_right_Selected = null;
-            this.btnMensualidadEjercicio.Iconimage_Selected = null;
-            this.btnMensualidadEjercicio.IconMarginLeft = 0;
-            this.btnMensualidadEjercicio.IconMarginRight = 0;
-            this.btnMensualidadEjercicio.IconRightVisible = true;
-            this.btnMensualidadEjercicio.IconRightZoom = 0D;
-            this.btnMensualidadEjercicio.IconVisible = true;
-            this.btnMensualidadEjercicio.IconZoom = 60D;
-            this.btnMensualidadEjercicio.IsTab = true;
-            this.btnMensualidadEjercicio.Location = new System.Drawing.Point(48, 405);
-            this.btnMensualidadEjercicio.Name = "btnMensualidadEjercicio";
-            this.btnMensualidadEjercicio.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.btnMensualidadEjercicio.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.btnMensualidadEjercicio.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
-            this.btnMensualidadEjercicio.selected = false;
-            this.btnMensualidadEjercicio.Size = new System.Drawing.Size(151, 33);
-            this.btnMensualidadEjercicio.TabIndex = 15;
-            this.btnMensualidadEjercicio.Text = "     Mensualidad           Ejercicio";
-            this.btnMensualidadEjercicio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMensualidadEjercicio.Textcolor = System.Drawing.Color.White;
-            this.btnMensualidadEjercicio.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMensualidadEjercicio.Click += new System.EventHandler(this.btnMensualidadEjercicio_Click);
-            // 
             // lblTiempo
             // 
             this.lblTiempo.AutoSize = true;
@@ -514,46 +352,6 @@
             this.lblFecha.TabIndex = 18;
             this.lblFecha.Text = "viernes, 9 febrero de 2018";
             // 
-            // btnMensualidad
-            // 
-            this.btnMensualidad.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
-            this.btnMensualidad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.btnMensualidad.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnMensualidad.BorderRadius = 0;
-            this.btnMensualidad.ButtonText = "     Mensualidad";
-            this.btnMensualidad.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panelAnimator2.SetDecoration(this.btnMensualidad, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.btnMensualidad, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.btnMensualidad, BunifuAnimatorNS.DecorationType.None);
-            this.btnMensualidad.DisabledColor = System.Drawing.Color.Gray;
-            this.btnMensualidad.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnMensualidad.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnMensualidad.Iconimage")));
-            this.btnMensualidad.Iconimage_right = null;
-            this.btnMensualidad.Iconimage_right_Selected = null;
-            this.btnMensualidad.Iconimage_Selected = null;
-            this.btnMensualidad.IconMarginLeft = 0;
-            this.btnMensualidad.IconMarginRight = 0;
-            this.btnMensualidad.IconRightVisible = true;
-            this.btnMensualidad.IconRightZoom = 0D;
-            this.btnMensualidad.IconVisible = true;
-            this.btnMensualidad.IconZoom = 60D;
-            this.btnMensualidad.IsTab = true;
-            this.btnMensualidad.Location = new System.Drawing.Point(1, 335);
-            this.btnMensualidad.Margin = new System.Windows.Forms.Padding(4);
-            this.btnMensualidad.Name = "btnMensualidad";
-            this.btnMensualidad.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.btnMensualidad.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.btnMensualidad.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
-            this.btnMensualidad.selected = false;
-            this.btnMensualidad.Size = new System.Drawing.Size(200, 33);
-            this.btnMensualidad.TabIndex = 17;
-            this.btnMensualidad.Text = "     Mensualidad";
-            this.btnMensualidad.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMensualidad.Textcolor = System.Drawing.Color.White;
-            this.btnMensualidad.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMensualidad.Click += new System.EventHandler(this.btnMensualidad_Click);
-            this.btnMensualidad.DoubleClick += new System.EventHandler(this.btnMensualidad_DoubleClick);
-            // 
             // btnFacturas
             // 
             this.btnFacturas.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
@@ -578,7 +376,7 @@
             this.btnFacturas.IconVisible = true;
             this.btnFacturas.IconZoom = 60D;
             this.btnFacturas.IsTab = true;
-            this.btnFacturas.Location = new System.Drawing.Point(1, 510);
+            this.btnFacturas.Location = new System.Drawing.Point(1, 370);
             this.btnFacturas.Name = "btnFacturas";
             this.btnFacturas.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.btnFacturas.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
@@ -616,7 +414,7 @@
             this.btnProductos.IconVisible = true;
             this.btnProductos.IconZoom = 60D;
             this.btnProductos.IsTab = true;
-            this.btnProductos.Location = new System.Drawing.Point(1, 475);
+            this.btnProductos.Location = new System.Drawing.Point(1, 335);
             this.btnProductos.Name = "btnProductos";
             this.btnProductos.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.btnProductos.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
@@ -757,7 +555,7 @@
             // 
             // panelAnimator
             // 
-            this.panelAnimator.AnimationType = BunifuAnimatorNS.AnimationType.Particles;
+            this.panelAnimator.AnimationType = BunifuAnimatorNS.AnimationType.Mosaic;
             this.panelAnimator.Cursor = null;
             animation2.AnimateOnlyDifferences = true;
             animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
@@ -766,19 +564,19 @@
             animation2.MinTime = 0F;
             animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
             animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-            animation2.MosaicSize = 1;
-            animation2.Padding = new System.Windows.Forms.Padding(100, 50, 100, 150);
+            animation2.MosaicSize = 20;
+            animation2.Padding = new System.Windows.Forms.Padding(30);
             animation2.RotateCoeff = 0F;
             animation2.RotateLimit = 0F;
             animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
             animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-            animation2.TimeCoeff = 2F;
+            animation2.TimeCoeff = 0F;
             animation2.TransparencyCoeff = 0F;
             this.panelAnimator.DefaultAnimation = animation2;
             // 
             // panelAnimator2
             // 
-            this.panelAnimator2.AnimationType = BunifuAnimatorNS.AnimationType.Particles;
+            this.panelAnimator2.AnimationType = BunifuAnimatorNS.AnimationType.Mosaic;
             this.panelAnimator2.Cursor = null;
             animation3.AnimateOnlyDifferences = true;
             animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
@@ -787,13 +585,13 @@
             animation3.MinTime = 0F;
             animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
             animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
-            animation3.MosaicSize = 1;
-            animation3.Padding = new System.Windows.Forms.Padding(100, 50, 100, 150);
+            animation3.MosaicSize = 20;
+            animation3.Padding = new System.Windows.Forms.Padding(30);
             animation3.RotateCoeff = 0F;
             animation3.RotateLimit = 0F;
             animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
             animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
-            animation3.TimeCoeff = 2F;
+            animation3.TimeCoeff = 0F;
             animation3.TransparencyCoeff = 0F;
             this.panelAnimator2.DefaultAnimation = animation3;
             // 
@@ -834,19 +632,14 @@
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
         private System.Windows.Forms.Panel Barra;
         private System.Windows.Forms.Panel panel1;
-        private Bunifu.Framework.UI.BunifuFlatButton btnExtras;
         private Bunifu.Framework.UI.BunifuImageButton btnPrincipal;
-        private Bunifu.Framework.UI.BunifuFlatButton btnRegistroMensualidad;
-        private Bunifu.Framework.UI.BunifuFlatButton btnTipoEjercicio;
         private Bunifu.Framework.UI.BunifuFlatButton btnHorarioEmpleado;
         private Bunifu.Framework.UI.BunifuImageButton btnMenu;
         private System.Windows.Forms.PictureBox Logo;
         private Bunifu.Framework.UI.BunifuFlatButton btnRegistroEmpleado;
-        private Bunifu.Framework.UI.BunifuFlatButton btnMensualidadEjercicio;
         private System.Windows.Forms.Label lblTiempo;
         private System.Windows.Forms.Label lblHora;
         private System.Windows.Forms.Label lblFecha;
-        private Bunifu.Framework.UI.BunifuFlatButton btnMensualidad;
         private Bunifu.Framework.UI.BunifuFlatButton btnRegistarCliente;
         private Bunifu.Framework.UI.BunifuFlatButton btnFacturas;
         private Bunifu.Framework.UI.BunifuFlatButton btnProductos;

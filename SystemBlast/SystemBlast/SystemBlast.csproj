@@ -74,12 +74,6 @@
     <Compile Include="formEmpleado.Designer.cs">
       <DependentUpon>formEmpleado.cs</DependentUpon>
     </Compile>
-    <Compile Include="formExtras.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="formExtras.Designer.cs">
-      <DependentUpon>formExtras.cs</DependentUpon>
-    </Compile>
     <Compile Include="formFactura.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,17 +92,11 @@
     <Compile Include="formHorarioEmpleado.Designer.cs">
       <DependentUpon>formHorarioEmpleado.cs</DependentUpon>
     </Compile>
-    <Compile Include="formMensualidad.cs">
+    <Compile Include="formListaFacturas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formMensualidad.Designer.cs">
-      <DependentUpon>formMensualidad.cs</DependentUpon>
-    </Compile>
-    <Compile Include="formMensualidadEjercicio.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="formMensualidadEjercicio.Designer.cs">
-      <DependentUpon>formMensualidadEjercicio.cs</DependentUpon>
+    <Compile Include="formListaFacturas.Designer.cs">
+      <DependentUpon>formListaFacturas.cs</DependentUpon>
     </Compile>
     <Compile Include="formMenu.cs">
       <SubType>Form</SubType>
@@ -128,12 +116,6 @@
     <Compile Include="formProductos.Designer.cs">
       <DependentUpon>formProductos.cs</DependentUpon>
     </Compile>
-    <Compile Include="formTipoEjercicio.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="formTipoEjercicio.Designer.cs">
-      <DependentUpon>formTipoEjercicio.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="formClientes.resx">
@@ -151,11 +133,8 @@
     <EmbeddedResource Include="formHorarioEmpleado.resx">
       <DependentUpon>formHorarioEmpleado.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="formMensualidad.resx">
-      <DependentUpon>formMensualidad.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="formMensualidadEjercicio.resx">
-      <DependentUpon>formMensualidadEjercicio.cs</DependentUpon>
+    <EmbeddedResource Include="formListaFacturas.resx">
+      <DependentUpon>formListaFacturas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formMenu.resx">
       <DependentUpon>formMenu.cs</DependentUpon>
@@ -165,9 +144,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formProductos.resx">
       <DependentUpon>formProductos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="formTipoEjercicio.resx">
-      <DependentUpon>formTipoEjercicio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

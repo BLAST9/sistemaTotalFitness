@@ -14,6 +14,8 @@ namespace SystemBlast
 {
     public partial class formProductos : Form
     {
+        private string sumaExistencia = "Abierto";
+
         private personRule _personRule;
         private clsProductoEntity _productos;
 
@@ -23,6 +25,7 @@ namespace SystemBlast
 
             _personRule = new personRule();
             _productos = new clsProductoEntity();
+
         }
 
         private void formProductos_Load(object sender, EventArgs e)
@@ -39,22 +42,36 @@ namespace SystemBlast
         private void txtCantidad_TextChanged(object sender, EventArgs e)
         {
             if (!string.IsNullOrWhiteSpace(txtCantidad.Text) || !string.IsNullOrEmpty(txtCantidad.Text))
+            {
                 _productos.cantidadTotal = Convert.ToInt32(txtCantidad.Text);
+            }
             else
+            {
+
                 this._productos.cantidadTotal = 0;
+            }
 
-            if (!string.IsNullOrWhiteSpace(txtCantidad.Text) || !string.IsNullOrEmpty(txtCantidad.Text))
-                _productos.cantidadExistencia = Convert.ToInt32(txtCantidad.Text);
+            if (sumaExistencia.Equals("Abierto"))
+            {
+                if (!string.IsNullOrWhiteSpace(txtCantidad.Text) || !string.IsNullOrEmpty(txtCantidad.Text))
+                    _productos.cantidadExistencia = Convert.ToInt32(txtCantidad.Text);
+                else
+                    this._productos.cantidadExistencia = 0;
+            }
+
             else
-                this._productos.cantidadExistencia = 0;
-        }
+            {
+                if (!string.IsNullOrWhiteSpace(txtCantidadExistencia.Text) || !string.IsNullOrEmpty(txtCantidadExistencia.Text))
+                    _productos.cantidadExistencia = int.Parse(txtCantidadExistencia.Text);
+                else
+                    this._productos.cantidadExistencia = 0;
+            }
 
+          
+        }
         private void txtCantidadExistencia_TextChanged(object sender, EventArgs e)
         {
-            if (!string.IsNullOrWhiteSpace(txtCantidad.Text) || !string.IsNullOrEmpty(txtCantidad.Text))
-                _productos.cantidadExistencia =+ Convert.ToInt32(txtCantidad.Text);
-            else
-                this._productos.cantidadExistencia = 0;
+            
         }
 
         private void txtDescripcion_TextChanged(object sender, EventArgs e)
@@ -77,7 +94,7 @@ namespace SystemBlast
                 txtCantidad.Text = "";
                 txtCantidadExistencia.Text = "";
                 txtDescripcion.Text = "";
-
+                txtPrecio.Text = "";
                 txtNombre.Focus();
 
 
@@ -91,13 +108,15 @@ namespace SystemBlast
 
         private void btnActualizar_Click(object sender, EventArgs e)
         {
+            sumaExistencia = "Cerrado";
+
             DialogResult R = MessageBox.Show("Seguro desea actualizar los datos ", "", MessageBoxButtons.YesNo);
 
             if (R == DialogResult.Yes)
             {
                 this._productos.idProducto = this.idProducto;
                 this._personRule.IsValidProductoGuardar(_productos);
-
+                this._personRule.sumaActualizarProducto(_productos);
                 this._personRule.ActualizarProducto(this._productos);
                 MessageBox.Show("Actualizado Correctamente");
 
@@ -105,6 +124,7 @@ namespace SystemBlast
                 txtCantidad.Text = "";
                 txtDescripcion.Text = "";
                 txtCantidadExistencia.Text = "";
+                txtPrecio.Text = "";
                 txtNombre.Focus();
                 this.List();
 
@@ -120,6 +140,7 @@ namespace SystemBlast
                     txtCantidad.Text = "";
                     txtDescripcion.Text = "";
                     txtCantidadExistencia.Text = "";
+                    txtPrecio.Text = "";
                     txtNombre.Focus();
                     this.List();
 
@@ -130,19 +151,20 @@ namespace SystemBlast
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            DialogResult R = MessageBox.Show("Seguro desea actualizar los datos ", "", MessageBoxButtons.YesNo);
+            DialogResult R = MessageBox.Show("Seguro desea eliminar los datos ", "", MessageBoxButtons.YesNo);
 
             if (R == DialogResult.Yes)
             {
                 this._productos.idProducto = this.idProducto;
 
-                this._personRule.ActualizarProducto(this._productos);
-                MessageBox.Show("Actualizado Correctamente");
+                this._personRule.EliminarProducto(this._productos);
+                MessageBox.Show("eliminado Correctamente");
 
                 txtNombre.Text = "";
                 txtCantidad.Text = "";
                 txtDescripcion.Text = "";
                 txtCantidadExistencia.Text = "";
+                txtPrecio.Text = "";
                 txtNombre.Focus();
                 this.List();
             }
@@ -155,6 +177,7 @@ namespace SystemBlast
                     txtNombre.Text = "";
                     txtCantidad.Text = "";
                     txtDescripcion.Text = "";
+                    txtPrecio.Text = "";
                     txtCantidadExistencia.Text = "";
                     txtNombre.Focus();
                     this.List();
@@ -170,6 +193,7 @@ namespace SystemBlast
             txtCantidad.Text = "";
             txtDescripcion.Text = "";
             txtCantidadExistencia.Text = "";
+            txtPrecio.Text = "";
             txtNombre.Focus();
             this.List();
 
@@ -183,8 +207,10 @@ namespace SystemBlast
 
         private void dtgLlenardatos_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            sumaExistencia = "Cerrado";
             this.llenarDatos();
             btnGuardar.Enabled = false;
+            
         }
 
         public void llenarDatos()
@@ -194,14 +220,14 @@ namespace SystemBlast
             txtDescripcion.Text = dtgLlenardatos.CurrentRow.Cells[2].Value.ToString();
             txtCantidad.Text = dtgLlenardatos.CurrentRow.Cells[3].Value.ToString();
             txtCantidadExistencia.Text = dtgLlenardatos.CurrentRow.Cells[4].Value.ToString();
-
+            txtPrecio.Text = dtgLlenardatos.CurrentRow.Cells[5].Value.ToString();
         }
 
         private void List()
         {
             try
             {
-                dtgLlenardatos.DataSource = (from c in _personRule.ListaProducto(txtNombre.Text) select new { c.idProducto, c.nombre, c.descripcion, c.cantidadTotal, c.cantidadExistencia }).ToList();
+                dtgLlenardatos.DataSource = (from c in _personRule.ListaProducto(txtNombre.Text) select new { c.idProducto, c.nombre, c.descripcion, c.cantidadTotal, c.cantidadExistencia, c.Precio}).ToList();
                 dtgLlenardatos.Columns[0].Visible = false;
             }
             catch (Exception e)
@@ -292,6 +318,25 @@ namespace SystemBlast
                 _productos.Precio = Convert.ToInt32(txtPrecio.Text);
             else
                 this._productos.Precio = 0;
+        }
+
+        private void txtPrecio_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsNumber(e.KeyChar))
+                e.Handled = false;
+            else if (Char.IsControl(e.KeyChar))
+                e.Handled = false;
+            else if (Char.IsSeparator(e.KeyChar))
+                e.Handled = false;
+            else if (Char.IsPunctuation(e.KeyChar))
+                e.Handled = false;
+            else e.Handled = true; ;
+
+
+            if (txtPrecio.Text.Length == 5)
+            {
+                e.Handled = true;
+            }
         }
     }
 }
